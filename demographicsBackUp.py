@@ -1,40 +1,104 @@
 #While creating my BERT model this is a call to chat GPT 3.5 to have functionality to the web-ui
+from openai import OpenAI #Chat GPT 3.5
+#newspaper has a dependency lxml[html_clean] pip install lxml
+from newspaper import Article #Get text from a News Article URL 
 
-from openai import OpenAI
+
+import re #Regular Expression
+
+#List of functions
+#demographics() take a list of demographics represented by integers and turn it into instructions for a LLM
+#Returns a string
+
+#getArticle() Take a URL as an input and grab the text from that article
+#Returns a string
+
+#checkArticle() Check that a URL is from a list of news websites judged to be trusted
+#Returns boolean
+
 
 #create a function to change demographics into a string
 #default for arguments is 0
 def demographics(age=0, ed=0, income=0, region=0, country=0):
-      demo = ""
-      match age:
-         case 1:
-            demo = demo + "User is under 15. "
+  demo = ""
+  match age:
+    case 1:
+      demo = demo + "User is under 15. "
 
-         case 2:
-            demo = demo + "User is between 15 and 35. "
+    case 2:
+      demo = demo + "User is between 15 and 35. "
 
-         case 3:
-            demo = demo + "User is between 35 and 65. "
+    case 3:
+      demo = demo + "User is between 35 and 65. "
 
-         case 4:
-            demo = demo + "User is over 65. "
+    case 4:
+      demo = demo + "User is over 65. "
 
-      match ed:
-         case 1:
-            demo = demo + "User has graduated high school. "
+  match ed:
+    case 1:
+      demo = demo + "User has graduated high school. "
           
-         case 2:
-            demo = demo + "User has a Bachelor's degree. "
+    case 2:
+      demo = demo + "User has a Bachelor's degree. "
 
-         case 3:
-            demo = demo + "User has a PHD. "
-            
+    case 3:
+      demo = demo + "User has a PHD. "
+      
+  match country:
+    case 1:
+      demo = demo + "User is Australian. "
 
+    case 2:
+      demo = demo + "User is from New Zealand. "
+
+    case 3:
+      demo = demo + "User is from the UK. "
+
+    case 4:
+      demo = demo + "User is from the United States of America. "
+          
+  match region:
+    case 1:
+      demo = demo + "User lives in a city. "
+
+    case 2:
+      demo = demo + "User lives in a rural area. "
+
+  match income:
+    case 1:
+      demo = demo + "User earns less than $30000 a year."
+    
+    case 2:
+      demo = demo + "User earns between $30000 and $100000 a year."
         
+    case 3:  
+      demo = demo + "User earns over $100000 a year."
+  
+  if demo == "":
+    demo = "Summarize the provided article"
+  else:
+    demo = "Summarize the provide article using language best suited to engage the user. " + demo
+  
+  return demo   
+
+#Check that an article is from a recognized news source
+def check_article(url):
+  ok_list = ["abc.net.au/news/"]
+  checking = True #boolean to
+  url_regex = re.compile(r'https?://(?:www\.)?abc.net.au/news/[a-zA-Z0-9./]+')
+  return bool(url_regex.match(url))
+
 
 #create a function that can grab text from a website
-def get_article_text(article):
-  pass
+def get_article_text(url):
+  article = Article(url)
+  article.download()
+  
+  text = article.parse()
+  print(article.text)
+
+  return text
+
 
 #create a function to call chatgpt 3.5 using the demographics
 
@@ -49,3 +113,5 @@ def summarise(demo, cont):
   )
 
   print(completion.choices[0].message)
+
+print(check_article("https://www.abc.net.au/news/2024-06-30/santos-tiwi-islands-barossa-traditional-owners-legal-fight/104025414"))
