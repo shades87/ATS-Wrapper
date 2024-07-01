@@ -2,7 +2,7 @@
 from openai import OpenAI #Chat GPT 3.5
 #newspaper has a dependency lxml[html_clean] pip install lxml
 from newspaper import Article #Get text from a News Article URL 
-
+from newspaper import Config
 
 import re #Regular Expression
 
@@ -91,11 +91,20 @@ def check_article(url):
 
 #create a function that can grab text from a website
 def get_article_text(url):
+  text = ""
+  user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
+  config = Config()
+  config.browser_user_agent = user_agent
+
   article = Article(url)
-  article.download()
-  
-  text = article.parse()
-  print(article.text)
+
+  try:
+    article.download()
+    article.parse()
+    print(article.text)
+  except:
+    print("Download failed")
+
 
   return text
 
@@ -107,7 +116,7 @@ def summarise(demo, cont):
   completion = client.chat.completions.create(
     model="gpt-3.5-turbo",
     messages=[
-      {"role": "system", "content": "Summarize the content using language to best engage someone whos is " + demo},
+      {"role": "system", "content": demo},
       {"role": "user", "content": cont}
     ]
   )
@@ -115,3 +124,8 @@ def summarise(demo, cont):
   print(completion.choices[0].message)
 
 print(check_article("https://www.abc.net.au/news/2024-06-30/santos-tiwi-islands-barossa-traditional-owners-legal-fight/104025414"))
+demos = demographics(1,1,1,1,1)
+print(demos)
+article = get_article_text('https://www.theguardian.com/australia-news/article/2024/jul/01/fatima-payman-says-she-has-been-exiled-by-labor-following-suspension-from-caucus')
+print(article)
+summarise(demos,article)
