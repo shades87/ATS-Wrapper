@@ -15,8 +15,7 @@ import re #Regular Expression
 #Returns a string
 
 #checkArticle() Check that a URL is from a list of news websites judged to be trusted
-#Returns boolean
-
+#Returns boolean\
 
 #create a function to change demographics into a string
 #default for arguments is 0
