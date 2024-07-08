@@ -1,3 +1,4 @@
+import sys
 #While creating my BERT model this is a call to chat GPT 3.5 to have functionality to the web-ui
 from openai import OpenAI #Chat GPT 3.5
 #newspaper has a dependency lxml[html_clean] pip install lxml
@@ -123,9 +124,15 @@ def summarise(demo, cont):
 
   print(completion.choices[0].message)
 
-print(check_article("https://www.abc.net.au/news/2024-06-30/santos-tiwi-islands-barossa-traditional-owners-legal-fight/104025414"))
-demos = demographics(1,1,1,1,1)
-print(demos)
-article = get_article_text('https://www.theguardian.com/australia-news/article/2024/jul/01/fatima-payman-says-she-has-been-exiled-by-labor-following-suspension-from-caucus')
-print(article)
-summarise(demos,article)
+#I think I should rearrange the functions
+def flow(arr):
+  if(arr[1] == 'checkURL'):
+    check_article(arr[2])
+
+  elif (arr[1] == 'Summarise'):
+    article = get_article_text(arr[2])
+    demos = demographics(arr[3],arr[4],arr[5],arr[6],arr[7])
+    print(summarise(demos,article))
+    sys.stdout.flush()
+
+flow(sys.argv)
