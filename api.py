@@ -9,7 +9,7 @@ app = FastAPI()
 async def read_root():
     return {"Message": "Congrats! This is your first API!"}
 
-class summary(BaseModel):
+class summaryClass(BaseModel):
     url: str
     age: int
     nat: int
@@ -18,6 +18,6 @@ class summary(BaseModel):
     city: int
 
 @app.post("/summarise")
-async def summarise():
+async def summarise(summary: summaryClass):
     
     return summary
