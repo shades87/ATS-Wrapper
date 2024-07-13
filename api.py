@@ -17,7 +17,8 @@ class summaryClass(BaseModel):
     ed: int
     city: int
 
-@app.post("/summarise")
+#summarise with chat GPT 3.5
+@app.post("/summariseGPT")
 async def summarise(summary: summaryClass):
     
     return summary
