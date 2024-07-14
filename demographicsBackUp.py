@@ -122,7 +122,8 @@ def summarise(demo, cont):
     ]
   )
   print (completion.choices[0].message.content)
-  return completion.choices[0].message.content
+  a = completion.choices[0].message.content
+  return a
 
 #I think I should rearrange the functions
 def flow(demoArr, article):
@@ -130,9 +131,10 @@ def flow(demoArr, article):
   hash = hashFunction("ChatGPT", article, demoArr[0], demoArr[1],demoArr[2],demoArr[3], demoArr[4])
   
   if checkFileExists(hash):
-    response = readFile(hash)
     f = open("summaries/"+hash+".txt", "r")
     text = f.read()
+    print(text)
+    response = text
     f.close()
 
   else:
