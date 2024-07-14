@@ -6,7 +6,7 @@ from newspaper import Article #Get text from a News Article URL
 from newspaper import Config
 
 import re #Regular Expression
-
+from hash import *
 #List of functions
 #demographics() take a list of demographics represented by integers and turn it into instructions for a LLM
 #Returns a string
@@ -126,11 +126,17 @@ def summarise(demo, cont):
 #I think I should rearrange the functions
 def flow(demoArr, article):
   response = ""
-
+  hash = hashFunction("ChatGPT", article, demoArr[0], demoArr[1],demoArr[2],demoArr[3], demoArr[4])
   
-  articleText = get_article_text(article)
-  demos = demographics(demoArr[0], demoArr[1],demoArr[2],demoArr[3], demoArr[4])
-  response = summarise(demos,article)
+  if checkFileExists(hash):
+    f = open("summaries/"+hash+".txt", "r")
+    response = f.read()
+    f.close()
+
+  else:
+    articleText = get_article_text(article)
+    demos = demographics(demoArr[0], demoArr[1],demoArr[2],demoArr[3], demoArr[4])
+    response = summarise(demos,article)
     
   return response
 
