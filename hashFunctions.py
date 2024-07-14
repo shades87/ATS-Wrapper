@@ -1,7 +1,12 @@
 from pathlib import Path
+import hashlib
 
 def hashFunction(LLM, url, age, ed, nat, income, city):
-    hashVal = str(hash(LLM+url+str(age)+str(ed)+str(nat)+str(income)+str(city)))
+    m = hashlib.sha256()
+    m.update(str((LLM+url+str(age)+str(ed)+str(nat)+str(income)+str(city))).encode())
+    m.digest()
+    hashVal = m.hexdigest()
+    
     return hashVal
 
 def checkFileExists(hashVal):
@@ -14,5 +19,14 @@ def checkFileExists(hashVal):
     
 def writeSummary(hash, summary):
     f = open("summaries/"+hash +".txt", "w")
-    f.write(summary)
+    f.write(str(summary))
     f.close()
+
+def readFile(hash):
+    f = open("summaries/"+hash +".txt", "r")
+
+    s = f.read()
+    a = s.split("=")
+    content = a[1]
+
+    return {"content:" + content}

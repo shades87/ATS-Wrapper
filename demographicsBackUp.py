@@ -7,6 +7,7 @@ from newspaper import Config
 
 import re #Regular Expression
 from hashFunctions import *
+import json
 #List of functions
 #demographics() take a list of demographics represented by integers and turn it into instructions for a LLM
 #Returns a string
@@ -129,15 +130,20 @@ def flow(demoArr, article):
   hash = hashFunction("ChatGPT", article, demoArr[0], demoArr[1],demoArr[2],demoArr[3], demoArr[4])
   
   if checkFileExists(hash):
+    response = readFile(hash)
     f = open("summaries/"+hash+".txt", "r")
-    response = f.read()
+    text = f.read()
+    a = text.split("=")
+    print("content: " + a[1])
+    
     f.close()
 
   else:
     articleText = get_article_text(article)
     demos = demographics(demoArr[0], demoArr[1],demoArr[2],demoArr[3], demoArr[4])
     response = summarise(demos,article)
-    print(response.content)
-    writeSummary(hash, response.content)
+    print(response)
+    writeSummary(hash, response)
+  
   return response
 
