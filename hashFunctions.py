@@ -26,7 +26,5 @@ def readFile(hash):
     f = open("summaries/"+hash +".txt", "r")
 
     s = f.read()
-    a = s.split("=")
-    content = a[1]
-
-    return {"content:" + content}
+    f.close()
+    return {"content:" + s}

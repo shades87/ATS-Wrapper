@@ -38,4 +38,4 @@ async def summarise(demographics: summaryClass):
     article = demographics.url
     summary = flow(demos, article)
     print(summary)
-    return summary
+    return {"message": summary}

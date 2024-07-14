@@ -121,8 +121,8 @@ def summarise(demo, cont):
       {"role": "user", "content": cont}
     ]
   )
-
-  return completion.choices[0].message
+  print (completion.choices[0].message.content)
+  return completion.choices[0].message.content
 
 #I think I should rearrange the functions
 def flow(demoArr, article):
@@ -133,15 +133,13 @@ def flow(demoArr, article):
     response = readFile(hash)
     f = open("summaries/"+hash+".txt", "r")
     text = f.read()
-    a = text.split("=")
-    print("content: " + a[1])
-    
     f.close()
 
   else:
     articleText = get_article_text(article)
     demos = demographics(demoArr[0], demoArr[1],demoArr[2],demoArr[3], demoArr[4])
     response = summarise(demos,article)
+    response = response
     print(response)
     writeSummary(hash, response)
   
