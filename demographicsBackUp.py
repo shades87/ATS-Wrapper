@@ -133,7 +133,6 @@ def flow(demoArr, article):
   if checkFileExists(hash):
     f = open("summaries/"+hash+".txt", "r")
     text = f.read()
-    print(text)
     response = text
     f.close()
 
@@ -142,7 +141,6 @@ def flow(demoArr, article):
     demos = demographics(demoArr[0], demoArr[1],demoArr[2],demoArr[3], demoArr[4])
     response = summarise(demos,article)
     response = response
-    print(response)
     writeSummary(hash, response)
   
   return response
