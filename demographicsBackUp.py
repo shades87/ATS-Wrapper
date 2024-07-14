@@ -121,17 +121,16 @@ def summarise(demo, cont):
     ]
   )
 
-  print(completion.choices[0].message)
+  return completion.choices[0].message
 
 #I think I should rearrange the functions
-def flow(arr):
-  if(arr[1] == 'checkURL'):
-    check_article(arr[2])
+def flow(demoArr, article):
+  response = ""
 
-  elif (arr[1] == 'Summarise'):
-    article = get_article_text(arr[2])
-    demos = demographics(arr[3],arr[4],arr[5],arr[6],arr[7])
-    print(summarise(demos,article))
-    sys.stdout.flush()
+  
+  articleText = get_article_text(article)
+  demos = demographics(demoArr[0], demoArr[1],demoArr[2],demoArr[3], demoArr[4])
+  response = summarise(demos,article)
+    
+  return response
 
-flow(sys.argv)
