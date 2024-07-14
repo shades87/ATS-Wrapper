@@ -6,7 +6,7 @@ from newspaper import Article #Get text from a News Article URL
 from newspaper import Config
 
 import re #Regular Expression
-from hash import *
+from hashFunctions import *
 #List of functions
 #demographics() take a list of demographics represented by integers and turn it into instructions for a LLM
 #Returns a string
@@ -137,6 +137,7 @@ def flow(demoArr, article):
     articleText = get_article_text(article)
     demos = demographics(demoArr[0], demoArr[1],demoArr[2],demoArr[3], demoArr[4])
     response = summarise(demos,article)
-    
+    print(response.content)
+    writeSummary(hash, response.content)
   return response
 
