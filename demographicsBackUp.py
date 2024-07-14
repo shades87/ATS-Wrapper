@@ -146,4 +146,3 @@ def flow(demoArr, article):
     writeSummary(hash, response)
   
   return response
-
