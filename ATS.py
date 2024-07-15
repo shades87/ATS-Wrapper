@@ -7,7 +7,7 @@ import torch.optim as optim
 
 # Example data
 data = [
-    {"article": "Some news article text", "summary": "A climate activist in Australia has been sentenced to three months in jail for participating in a blockade protest at the port of Newcastle. The activist was part of a group that used kayaks to block a coal shipment, calling for immediate action on climate change. The court found the activist guilty of obstructing a driver under traffic laws and sentenced them to jail, despite acknowledging their good character and motivation for the protest. The ruling has sparked criticism from environmental groups and supporters of the activist, who argue that the sentence is disproportionate and infringes on the right to peaceful protest.", "age_group": "18-24", "gender": "male", "education": "college", "region": "north", "interests": "technology"},
+    {"article": "Some news article text", "summary": "summary", "age_group": "18-24", "gender": "male", "education": "college", "region": "north", "interests": "technology"},
     {"article": "Another article", "summary": "Another summary", "age_group": "25-34", "gender": "female", "education": "high_school", "region": "south", "interests": "sports"},
     # I need more data entries...
 ]
