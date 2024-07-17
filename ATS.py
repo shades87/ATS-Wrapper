@@ -6,7 +6,9 @@ from transformers import BertModel, BertTokenizer
 import torch.optim as optim
 from dataset import *
 
-# Example data
+#I asked ChatGPT for help using One Hot Encoding to train BERT and used the results to help build this 
+
+# Load the dataset that I've created
 data = data()
 
 df = pd.DataFrame(data)
