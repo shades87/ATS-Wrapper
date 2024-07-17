@@ -4,3 +4,10 @@ def data():
     {"article": "Another article", "summary": "Another summary", "age_group": "25-34", "gender": "female", "education": "high_school", "region": "south", "interests": "sports"},
     # I need more data entries...
     ]
+
+    return data
+
+#Create data to summarise based on all possible demographic information
+def create_data():
+    articleURL = ""
+    ed = ["Under 15", ]

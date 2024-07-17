@@ -4,18 +4,15 @@ import torch.nn as nn
 from torch.utils.data import DataLoader, Dataset
 from transformers import BertModel, BertTokenizer
 import torch.optim as optim
+from dataset import *
 
 # Example data
-data = [
-    {"article": "Some news article text", "summary": "summary", "age_group": "18-24", "gender": "male", "education": "college", "region": "north", "interests": "technology"},
-    {"article": "Another article", "summary": "Another summary", "age_group": "25-34", "gender": "female", "education": "high_school", "region": "south", "interests": "sports"},
-    # I need more data entries...
-]
+data = data()
 
 df = pd.DataFrame(data)
 
 # One-hot encode demographic information
-demographic_fields = ['age_group', 'gender', 'education', 'region', 'interests']
+demographic_fields = ['age', 'ed', 'nat', 'income', 'metro']
 one_hot_encoded_demographics = pd.get_dummies(df[demographic_fields])
 
 # Combine the original dataframe with the one-hot encoded demographic data

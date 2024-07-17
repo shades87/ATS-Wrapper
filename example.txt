@@ -1,0 +1,9 @@
+#This is a template for how to save dataset information
+URL: 
+article text: 
+summary:
+age:
+nat:
+ed:
+income:
+metro:
