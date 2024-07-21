@@ -125,17 +125,22 @@ def create_data():
                 for d in range(3):
                     metro = d
                     for e in range(4):
-                        income = 4
+                        income = e
                         user = demographics(age, ed, income, metro, nat)
-
+                        print(user)
                         #Every 50 summaries change the article to be summarised
                         if (i%50 == 0):
-                            index = index + 1
                             articleURL = articles[index]
+                            #summarise and save
+
+                            index = index + 1
+                            
                         
                         #Increase the index, should go from 1 to 1200 (the number of permutations of the demographics)
                         #Every 50 summaries swap articles to get a range of summaries
                         i = i + 1
+                        
+
 
                         #function to summarise and save the data
 
@@ -152,3 +157,6 @@ def save_summary(article, summary, url, ed, nat, income, age, metro):
     text_file.write("metro:"+metro+"\n")
     text_file.write("income:"+income+"\n")
     text_file.close()
+
+
+create_data()
