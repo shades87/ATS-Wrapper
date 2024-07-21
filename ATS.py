@@ -111,6 +111,6 @@ def summarize(article, demographic_info, model, tokenizer):
 
 # Example usage
 article = "A new breakthrough in technology..."
-demographic_info = [1, 0, 0, 1, 0, 0, 1, 0, 0, 1]  # Example one-hot encoded demographics
+demographic_info = [1, 0, 0, 1, 0]  # Example one-hot encoded demographics
 summary = summarize(article, demographic_info, model, tokenizer)
 print(summary)

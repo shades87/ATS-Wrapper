@@ -1,0 +1,8 @@
+url:test_url
+article:test_article
+summary:test_summary
+age:test_metro
+ed:test_age
+nat:test_ed
+metro:test_income
+income:test_nat

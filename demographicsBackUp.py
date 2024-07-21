@@ -111,7 +111,7 @@ def get_article_text(url):
 
 
 #create a function to call chatgpt 3.5 using the demographics
-
+#This assumes that you have an OpenAI account, have credit in your account, and have saved your project key to the .env
 def summarise(demo, cont):
   client = OpenAI()
   completion = client.chat.completions.create(
