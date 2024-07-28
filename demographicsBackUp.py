@@ -107,7 +107,7 @@ def get_article_text(url):
     print("Download failed")
 
 
-  return text
+  return article.text.replace("\n", "")
 
 
 #create a function to call chatgpt 3.5 using the demographics
@@ -121,7 +121,7 @@ def summarise(demo, cont):
       {"role": "user", "content": cont}
     ]
   )
-  print (completion.choices[0].message.content)
+  #print (completion.choices[0].message.content)
   a = completion.choices[0].message.content
   return a
 

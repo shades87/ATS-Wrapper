@@ -1,0 +1,8 @@
+url:https://www.9news.com.au/national/wind-and-rain-set-to-linger-for-days-across-australia/bbb2409c-6bab-4bef-a7c1-92839c5bb682
+article:Travellers at Sydney Airport are being urged to expect further delays as strong winds continue to batter the city this morning. A cold front moving across Australia\’s south-east has brought harsh winds of 100km/h, rain and even blizzard conditions to parts of Victoria and New South Wales. Sydney Airport is continuing to operate only a single runway as strong winds of up to 50km/h are expected. At least six flights leaving Sydney this morning have been cancelled so far across Virgin, Jetstar and Qantas, with a further nine flights headed into Sydney scrapped. A Sydney Airport spokesperson said wild weather, and the knock-on effect of Friday\’s IT outage, could lead to delays throughout the day. "Due to high winds Airservices Australia will continue to operate our east-west runway, which may cause some delays throughout the day. This will remain in place into the afternoon," the spokesperson said.
+summary:Strong winds at Sydney Airport are causing delays for travelers with cancellations and potential disruptions to flights. A cold front is bringing harsh weather conditions including rain and blizzards in some areas. With wind speeds up to 50km/h, only one runway is currently in use, leading to flight cancellations and potential delays. The airport is advising passengers to be prepared for further disruptions throughout the day due to the ongoing windy conditions.
+age:35-65
+ed:Bachelor's Degree
+nat:
+metro:Metro
+income:Under $30K
