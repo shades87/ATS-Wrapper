@@ -1,6 +1,6 @@
 import sys
 import os, glob
-from openai import OpenAI #Chat GPT 3.5
+
 
 from newspaper import Article 
 from newspaper import Config
@@ -199,5 +199,71 @@ def save_summary(article, summary, url, ed, nat, income, age, metro):
     text_file.write("income:"+income+"\n")
     text_file.close()
 
+def load_data():
+    data = []
 
-create_data()
+    #example data
+     #{"article": "Some news article text", "summary": "summary", "age": "Under 15", "ed": "PHD", "nat": "Australia", "metro": "Metro", "income": "Under 30K"}
+    #]
+    path = 'dataset/'
+    for filename in glob.glob(os.path.join(path, '*.txt')):
+        with open(os.path.join(os.getcwd(), filename), 'r', encoding='utf-8') as f: # open in readonly mode
+            # do your stuff
+            article = ""
+            summary = ""
+            age = ""
+            ed = ""
+            nat = ""
+            metro = ""
+            income = ""
+            for line in f:
+                split = line.split(":")
+
+                
+                if split[0] == "article":
+                    split[1] = split[1].replace("\n", "")
+                    split[1] = split[1].replace("\\", "")
+                    article = split[1]
+                    
+                
+                if split[0] == "summary":
+                    split[1] = split[1].replace("\n", "")
+                    split[1] = split[1].replace("\\", "")
+                    summary = split[1]
+                
+                if split[0] == "age":
+                    split[1] = split[1].replace("\n", "")
+                    split[1] = split[1].replace("\\", "")
+                    age = split[1]
+
+                if split[0] == "ed":
+                    split[1] = split[1].replace("\n", "")
+                    split[1] = split[1].replace("\\", "")
+                    ed = split[1]
+
+                if split[0] == "nat":
+                    split[1] = split[1].replace("\n", "")
+                    split[1] = split[1].replace("\\", "")
+                    nat = split[1]
+
+                if split[0] == "metro":
+                    split[1] = split[1].replace("\n", "")
+                    split[1] = split[1].replace("\\", "")
+                    metro = split[1]
+
+                if split[0] == "income":
+                    split[1] = split[1].replace("\n", "")
+                    split[1] = split[1].replace("\\", "")
+                    income = split[1]
+
+                data.append({"article":article,"summary":summary,"age":age, "ed":ed, "nat":nat, "metro":metro, "income": income})
+
+            f.close()
+
+    for x in data:
+        print(x)
+
+    return data
+
+#create_data()
+load_data()
