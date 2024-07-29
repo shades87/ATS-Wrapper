@@ -260,8 +260,6 @@ def load_data():
 
             f.close()
 
-    for x in data:
-        print(x)
 
     return data
 
