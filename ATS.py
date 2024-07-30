@@ -7,7 +7,7 @@ import torch.optim as optim
 from dataset import *
 
 #I asked ChatGPT for help using One Hot Encoding to train BERT and used the results to help build this 
-
+torch.cuda.empty_cache()
 #set up device
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -35,6 +35,8 @@ print(f"Number of one-hot encoded demographic fields: {num_demographic_fields}")
 
 # Load BERT tokenizer
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+
+print("vocab size: " + str(tokenizer.vocab_size))
 
 class DemographicBERT(nn.Module):
     def __init__(self, demographic_size):
@@ -91,21 +93,28 @@ for epoch in range(10):
     model.train()
     total_loss = 0
     for batch in dataloader:
-        input_ids = batch['input_ids']
-        summary_ids = batch['summary_ids']
-        demographics = batch['demographics']
-        
-        # Move tensors to the appropriate device
-        input_ids = input_ids.to(device)
-        summary_ids = summary_ids.to(device)
-        demographics = demographics.to(device)
+        input_ids = batch['input_ids'].to(device)
+        summary_ids = batch['summary_ids'].to(device)
+        demographics = batch['demographics'].to(device)
         
         optimizer.zero_grad()
         outputs = model(input_ids, demographics)
         
+        # Check shapes before reshaping
+        print(f"Shape of outputs before reshaping: {outputs.shape}")
+        print(f"Shape of summary_ids before reshaping: {summary_ids.shape}")
+        
         # Reshape outputs and summary_ids
         outputs = outputs.view(-1, tokenizer.vocab_size)
         summary_ids = summary_ids.view(-1)
+        
+        # Check shapes after reshaping
+        print(f"Shape of outputs after reshaping: {outputs.shape}")
+        print(f"Shape of summary_ids after reshaping: {summary_ids.shape}")
+        
+        # Ensure that the reshaped tensors have matching sizes
+        #assert outputs.shape[0] == summary_ids.shape[0], \
+            #f"Mismatch: outputs {outputs.shape[0]} vs summary_ids {summary_ids.shape[0]}"
         
         # Compute loss
         loss = criterion(outputs, summary_ids)
@@ -116,11 +125,8 @@ for epoch in range(10):
 
     print(f"Epoch {epoch + 1}, Loss: {total_loss / len(dataloader)}")
 
-# Save the model
-model_path = "demographic_bert_model.pth"
-torch.save(model.state_dict(), model_path)
-print(f"Model saved to {model_path}")
-
+# Free up unused memory
+torch.cuda.empty_cache()
 # Load the model if needed
 #model = DemographicBERT(demographic_size=len(one_hot_encoded_demographics.columns))
 #model.load_state_dict(torch.load(model_path))

@@ -201,7 +201,7 @@ def save_summary(article, summary, url, ed, nat, income, age, metro):
 
 def load_data():
     data = []
-
+    print("Loading Data")
     #example data
      #{"article": "Some news article text", "summary": "summary", "age": "Under 15", "ed": "PHD", "nat": "Australia", "metro": "Metro", "income": "Under 30K"}
     #]
@@ -260,7 +260,7 @@ def load_data():
 
             f.close()
 
-
+    print("Finished Loading Data")
     return data
 
 #create_data()
