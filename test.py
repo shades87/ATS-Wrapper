@@ -52,25 +52,20 @@ class NewsDataset(Dataset):
 
 # Example custom model
 class DemographicBERT(nn.Module):
-    def __init__(self, num_demographic_features, hidden_size, vocab_size):
+    def __init__(self, demographic_size):
         super(DemographicBERT, self).__init__()
         self.bert = BertModel.from_pretrained('bert-base-uncased')
-        self.demographic_embedding = nn.Linear(num_demographic_features, hidden_size)
-        self.classifier = nn.Linear(hidden_size, vocab_size)
-
-    def forward(self, input_ids, demographics, attention_mask=None, labels=None):
-        outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask)
-        sequence_output = outputs.last_hidden_state
-        demographic_embed = self.demographic_embedding(demographics).unsqueeze(1).expand(-1, sequence_output.size(1), -1)
-        combined_output = sequence_output + demographic_embed
-        logits = self.classifier(combined_output)
-
-        if labels is not None:
-            loss_fct = nn.CrossEntropyLoss()
-            loss = loss_fct(logits.view(-1, logits.size(-1)), labels.view(-1))
-            return logits, loss
-
-        return logits
+        self.demographic_embedding = nn.Linear(demographic_size, 768)
+        self.decoder = nn.Linear(768, tokenizer.vocab_size)
+        self.softmax = nn.LogSoftmax(dim=-1)
+    
+    def forward(self, input_ids, demographic_info, attention_mask=None):
+        outputs = self.bert(input_ids, attention_mask=attention_mask)
+        last_hidden_state = outputs.last_hidden_state
+        demographic_embed = self.demographic_embedding(demographic_info)
+        combined = last_hidden_state + demographic_embed.unsqueeze(1)
+        decoded = self.decoder(combined)
+        return self.softmax(decoded)
 
 # Function to save model weights
 def save_model(model, path):
@@ -87,7 +82,7 @@ vocab_size = tokenizer.vocab_size
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Initialize the model
-model = DemographicBERT(num_demographic_features, hidden_size, vocab_size).to(device)
+model = DemographicBERT(demographic_size=16).to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
 
@@ -101,55 +96,32 @@ dataloader = DataLoader(dataset, batch_size=2, shuffle=True)
 for epoch in range(10):
     model.train()
     total_loss = 0
-
     for batch in dataloader:
+        #Loading batch
         input_ids = batch['input_ids'].to(device)
         summary_ids = batch['summary_ids'].to(device)
         demographics = batch['demographics'].to(device)
-        attention_mask = (input_ids != tokenizer.pad_token_id).long().to(device)
         
-        print("input ids shape: " + str(input_ids.shape))
-        print("summary ids shape: " + str(summary_ids.shape))
-        print("demographics shape" + str(demographics.shape))
-
         optimizer.zero_grad()
-        outputs = model(input_ids=input_ids, attention_mask=attention_mask, demographics=demographics, labels=summary_ids)
+        outputs = model(input_ids=input_ids, demographic_info=demographics, attention_mask=input_ids.ne(tokenizer.pad_token_id))
         
-        if isinstance(outputs, tuple):
-            logits, loss = outputs
-        else:
-            logits = outputs
-            loss = None  # Handle case where no labels are provided
+        # Flatten outputs and summary_ids
+        outputs = outputs.view(-1, tokenizer.vocab_size)
+        summary_ids = summary_ids.view(-1)
         
-        # Check shapes before reshaping
-        print(f"Shape of logits before reshaping: {logits.shape}")
-        print(f"Shape of summary_ids before reshaping: {summary_ids.shape}")
+        # Ensure that the reshaped tensors have matching sizes
+        num_valid_elements = min(outputs.shape[0], summary_ids.shape[0])
+        outputs = outputs[:num_valid_elements]
+        summary_ids = summary_ids[:num_valid_elements]
         
-        # Flatten logits and summary_ids correctly
-        logits = logits.view(-1, logits.size(-1))  # Flatten to [batch_size * seq_len, vocab_size]
-        summary_ids = summary_ids.view(-1)  # Flatten to [batch_size * target_seq_len]
-        
-        # Print shapes after reshaping
-        print(f"Shape of logits after reshaping: {logits.shape}")
-        print(f"Shape of summary_ids after reshaping: {summary_ids.shape}")
-
-        # Ensure summary_ids match the shape of logits
-        if logits.size(0) != summary_ids.size(0):
-            if logits.size(0) > summary_ids.size(0):
-                summary_ids = torch.nn.functional.pad(summary_ids, (0, logits.size(0) - summary_ids.size(0)), "constant", tokenizer.pad_token_id)
-            else:
-                logits = logits[:summary_ids.size(0), :]
-
         # Compute loss
-        loss = criterion(logits, summary_ids)
+        loss = criterion(outputs, summary_ids)
         loss.backward()
         optimizer.step()
+        
         total_loss += loss.item()
 
     print(f"Epoch {epoch + 1}, Loss: {total_loss / len(dataloader)}")
-
-    # Save the model weights at the end of each epoch
-    save_model(model, f'model_epoch_{epoch + 1}.pth')
 
 # Free up unused memory
 torch.cuda.empty_cache()
