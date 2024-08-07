@@ -6,7 +6,6 @@ from transformers import BertModel, BertTokenizer
 import torch.optim as optim
 from dataset import *
 
-
 print(torch.__version__)
 print("")
 print("")
@@ -87,10 +86,9 @@ def load_model(model, path):
 num_demographic_features = len(age_options) + len(education_options) + len(metro_options) + len(country_options) + len(income_options)
 hidden_size = 768
 vocab_size = tokenizer.vocab_size
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Initialize the model
-model = DemographicBERT(demographic_size=16).to(device)
+model = DemographicBERT(demographic_size=16).to('cuda')
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
 
@@ -102,19 +100,28 @@ dataloader = DataLoader(dataset, batch_size=16, shuffle=True) #original batch si
 
 # Training loop
 for epoch in range(10):
+    i=1
     print("Epoch: " + str(epoch))
     model.train()
     total_loss = 0
     for batch in dataloader:
+
         #Loading batch
-        input_ids = batch['input_ids'].to(device)
-        summary_ids = batch['summary_ids'].to(device)
-        demographics = batch['demographics'].to(device)
+
+        input_ids = batch['input_ids'].to('cuda')
+        summary_ids = batch['summary_ids'].to('cuda')
+        demographics = batch['demographics'].to('cuda')
         
         optimizer.zero_grad()
         outputs = model(input_ids=input_ids, demographic_info=demographics, attention_mask=input_ids.ne(tokenizer.pad_token_id))
         
+
+        print("Batch input_ids shape:", input_ids.shape)  # Should be (16, 512)
+        print("Batch summary_ids shape:", summary_ids.shape)  # Should be (16, 128)
+        print("Batch demographics shape:", demographics.shape)  # Should be (16, 16)
+
         # Flatten outputs and summary_ids
+
         outputs = outputs.view(-1, tokenizer.vocab_size)
         summary_ids = summary_ids.view(-1)
         
@@ -123,12 +130,16 @@ for epoch in range(10):
         outputs = outputs[:num_valid_elements]
         summary_ids = summary_ids[:num_valid_elements]
         
+
         # Compute loss
         loss = criterion(outputs, summary_ids)
         loss.backward()
         optimizer.step()
-        
+
         total_loss += loss.item()
+        if i > 16:
+            break
+        i+=1
 
     print(f"Epoch {epoch + 1}, Loss: {total_loss / len(dataloader)}")
 
@@ -139,9 +150,9 @@ torch.cuda.empty_cache()
 #load_model(model, 'model_epoch_10.pth')
 
 def summarize(article, demographic_info, model, tokenizer):
-    input_ids = tokenizer.encode(article, return_tensors='pt').to(device)
-    attention_mask = torch.tensor([1] * input_ids.size(-1) + [0] * (512 - input_ids.size(-1)), dtype=torch.long).unsqueeze(0).to(device)  # attention mask
-    demographic_tensor = torch.tensor(demographic_info, dtype=torch.float).unsqueeze(0).to(device)
+    input_ids = tokenizer.encode(article, return_tensors='pt').to("cuda")
+    attention_mask = torch.tensor([1] * input_ids.size(-1) + [0] * (512 - input_ids.size(-1)), dtype=torch.long).unsqueeze(0).to("cuda")  # attention mask
+    demographic_tensor = torch.tensor(demographic_info, dtype=torch.float).unsqueeze(0).to("cuda")
     with torch.no_grad():
         outputs = model(input_ids=input_ids, attention_mask=attention_mask, demographics=demographic_tensor)
     summary_ids = torch.argmax(outputs, dim=-1)
