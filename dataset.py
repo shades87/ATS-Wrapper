@@ -67,12 +67,14 @@ def data():
                         income = split[1]
                 
                 f.close()
-            data.append({"article": article, "summary": summary, "age": age, "ed": ed, "nat": nat, "metro": metro, "income": income})
-            print(data[0])
+            
+            if((article) and (summary)):
+                data.append({"article": article, "summary": summary, "age": age, "ed": ed, "nat": nat, "metro": metro, "income": income})
+            
 
 
 #Programatically create data to summarise based on all possible demographic information
-#Create the summaries using my chatgpt model
+#Create thed summaries using my chatgpt model
 def create_data():
 
     #Grab the URL, create a summary for every possible demographic info
@@ -206,6 +208,7 @@ def load_data():
      #{"article": "Some news article text", "summary": "summary", "age": "Under 15", "ed": "PHD", "nat": "Australia", "metro": "Metro", "income": "Under 30K"}
     #]
     path = 'dataset/'
+    i = 0
     for filename in glob.glob(os.path.join(path, '*.txt')):
         with open(os.path.join(os.getcwd(), filename), 'r', encoding='utf-8') as f: # open in readonly mode
             # do your stuff
@@ -256,12 +259,15 @@ def load_data():
                     split[1] = split[1].replace("\\", "")
                     income = split[1]
 
+            if((article )and (summary)):
                 data.append({"article":article,"summary":summary,"age":age, "ed":ed, "nat":nat, "metro":metro, "income": income})
-
+        
             f.close()
+            i += 1
 
+    print("Data count: " + str(i))
+    print("Length of data: " + str(len(data)))
     print("Finished Loading Data")
     return data
 
 #create_data()
-load_data()
