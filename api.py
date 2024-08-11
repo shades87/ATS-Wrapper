@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from demographicsBackUp import *
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
+from ATS import *
 
 app = FastAPI()
 
@@ -32,10 +33,42 @@ class summaryClass(BaseModel):
 
 #summarise with chat GPT 3.5
 @app.post("/summariseGPT")
-async def summarise(demographics: summaryClass):
+async def summariseA(demographics: summaryClass):
     summary = "the summary"
     demos = [demographics.age, demographics.city, demographics.ed, demographics.income, demographics.nat]
     article = demographics.url
     summary = flow(demos, article)
     print(summary)
     return {"message": summary}
+
+#summarise with custom model built on top of BERT
+@app.post("/summariseBERT")
+async def summariseB(demographics: summaryClass):
+    #order of age, ed, nat, income, city
+    #start of index age:0, ed:4, nat: 7, income: 11, metro: 13
+    one_hot = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+
+    if demographics.age > 0:
+        one_hot[summaryClass.age] = 1
+    
+    if demographics.ed > 0:
+        one_hot[3+ summaryClass.ed] = 1
+
+    if demographics.nat > 0:
+        one_hot[6 + summaryClass.nat] = 1
+
+    if demographics.income > 0:
+        one_hot[10+ summaryClass.income] = 1 
+
+    if demographics.city > 0:
+        one_hot[12+ summaryClass.metro] = 1
+
+    article = get_article_text(demographics.url)
+    #debug check article
+    print(article)
+    #debug, check one_hot list
+    print(one_hot)
+
+    summary = bertSummarize(article, one_hot)
+    return {"message": summary}
+    
