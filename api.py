@@ -1,8 +1,8 @@
 from fastapi import FastAPI
-from demographicsBackUp import *
+from GPTSummarise import *
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-from ATS import *
+from BERTSummarise import *
 
 app = FastAPI()
 

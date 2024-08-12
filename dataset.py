@@ -5,11 +5,11 @@ import os, glob
 from newspaper import Article 
 from newspaper import Config
 
-from demographicsBackUp import *
+from GPTSummarise import *
 from hashFunctions import *
 #Functions to create and load the dataset
 #I intend to use synthetic data to train the BERT model
-from demographicsBackUp import demographics
+from GPTSummarise import demographics
 
 #Load the data in the .txt files in /dataset 
 def data():
