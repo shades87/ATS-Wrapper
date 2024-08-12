@@ -6,6 +6,7 @@ from BERTSummarise import *
 
 app = FastAPI()
 
+
 origins = ["http://localhost",
     "http://localhost:8080",
     "http://localhost:5173",
@@ -49,19 +50,19 @@ async def summariseB(demographics: summaryClass):
     one_hot = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
     if demographics.age > 0:
-        one_hot[summaryClass.age] = 1
+        one_hot[demographics.age] = 1
     
     if demographics.ed > 0:
-        one_hot[3+ summaryClass.ed] = 1
+        one_hot[3+ demographics.ed] = 1
 
     if demographics.nat > 0:
-        one_hot[6 + summaryClass.nat] = 1
+        one_hot[6 + demographics.nat] = 1
 
     if demographics.income > 0:
-        one_hot[10+ summaryClass.income] = 1 
+        one_hot[10+ demographics.income] = 1 
 
     if demographics.city > 0:
-        one_hot[12+ summaryClass.metro] = 1
+        one_hot[12+ demographics.city] = 1
 
     article = get_article_text(demographics.url)
     #debug check article
