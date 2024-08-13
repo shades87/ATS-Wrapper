@@ -318,4 +318,4 @@ def load_data():
     print("Finished Loading Data")
     return data
 
-create_data()
+#create_data()

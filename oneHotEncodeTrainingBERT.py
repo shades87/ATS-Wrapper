@@ -16,32 +16,32 @@ import time
 #BERT Model written with the assistance of chatGPT 4o
 
 data = load_data()
-print("length of data: " + str(len(data)))
+#print("length of data: " + str(len(data)))
 
-print(data[0])
+#print(data[0])
 
 # Load your data into a DataFrame
 df = pd.DataFrame(data)
-print("Original dataframe shape:", df.shape)
-print("Number of duplicate rows:", df.duplicated().sum())
+#print("Original dataframe shape:", df.shape)
+#print("Number of duplicate rows:", df.duplicated().sum())
 # One-hot encode demographic information
 demographic_fields = ['age', 'ed', 'nat', 'income', 'metro']
 one_hot_encoded_demographics = pd.get_dummies(df[demographic_fields], drop_first=True)
 
-print(one_hot_encoded_demographics.shape)
-print(data[0])
-print(one_hot_encoded_demographics.iloc[0])
+#print(one_hot_encoded_demographics.shape)
+#print(data[0])
+#print(one_hot_encoded_demographics.iloc[0])
 
-print(data[500])
-print(one_hot_encoded_demographics.iloc[500])
+#print(data[500])
+#print(one_hot_encoded_demographics.iloc[500])
 # Combine the original dataframe with the one-hot encoded demographic data
 df = pd.concat([df, one_hot_encoded_demographics], axis=1)
 df = df.drop(columns=demographic_fields)
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
-print(df.shape)
-print(df.columns)
+#print(df.shape)
+#print(df.columns)
 
 def tokenize_data(df):
     df['article_tokens'] = df['article'].apply(lambda x: tokenizer.encode(x, truncation=True, padding='max_length', max_length=512))
@@ -103,13 +103,13 @@ optimizer = optim.Adam(model.parameters(), lr=5e-5)
 
 
 #check that model is running on nvidia gpu
-print(next(model.parameters()).device)
-print(torch.cuda.is_available())  # Should be True if CUDA is available
-print(torch.cuda.current_device())  # Prints the current device index
-print(torch.cuda.get_device_name(0))  # Prints the name of the device
+#print(next(model.parameters()).device)
+##print(torch.cuda.is_available())  # Should be True if CUDA is available
+#print(torch.cuda.current_device())  # Prints the current device index
+#print(torch.cuda.get_device_name(0))  # Prints the name of the device
 
 def train():
-    for epoch in range(10):
+    for epoch in range(1):
         model.train()
         total_loss = 0
         for batch in dataloader:
@@ -148,18 +148,19 @@ def train():
         print(f"Epoch {epoch + 1}, Loss: {total_loss / len(dataloader)}")
 
 start_time = time.time()
-train()
+#train()
 end_time = time.time()
 
 # Total time taken
-total_time = end_time - start_time
-print(f"Total training time: {total_time:.2f} seconds")
+#total_time = end_time - start_time
+#print(f"Total training time: {total_time:.2f} seconds")
 # Save the model weights
-torch.save(model.state_dict(), 'weights/demographic_bert_weights_two.pth')
+#torch.save(model.state_dict(), 'weights/demographic_bert_weights_one_epoch.pth')
 
 # Load the model weights
 #model.load_state_dict(torch.load('weights/demographic_bert_weights_two.pth'))
-#model.eval()
+model.eval()
+
 
 def summarize(article, demographic_info, model, tokenizer):
     maxSize = 512

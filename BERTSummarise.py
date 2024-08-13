@@ -4,7 +4,7 @@ from transformers import BertTokenizer
 
 def bertSummarize(article, demographic_info, max_length=128):
     
-    model_path = 'weights/demographic_bert_weights.pth'
+    model_path = 'weights/demographic_bert_weights_two.pth'
     model = DemographicBERT(demographic_size=16)  # or the correct demographic size
     model.load_state_dict(torch.load(model_path))
     model.eval()  # Set the model to evaluation mode

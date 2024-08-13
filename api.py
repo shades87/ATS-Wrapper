@@ -70,6 +70,7 @@ async def summariseB(demographics: summaryClass):
     #debug, check one_hot list
     print(one_hot)
 
+    
     summary = bertSummarize(article, one_hot)
     return {"message": summary}
     
