@@ -138,6 +138,7 @@ def flow(demoArr, article):
 
   else:
     articleText = get_article_text(article)
+    print("Article: " + articleText)
     demos = demographics(demoArr[0], demoArr[1],demoArr[2],demoArr[3], demoArr[4])
     response = summarise(demos,article)
     response = response

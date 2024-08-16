@@ -64,13 +64,14 @@ async def summariseB(demographics: summaryClass):
     if demographics.city > 0:
         one_hot[12+ demographics.city] = 1
 
+    print("URL: " + demographics.url)
     article = get_article_text(demographics.url)
     #debug check article
-    print(article)
+    print("Article: " + article)
     #debug, check one_hot list
     print(one_hot)
 
-    
+
     summary = bertSummarize(article, one_hot)
     return {"message": summary}
     
