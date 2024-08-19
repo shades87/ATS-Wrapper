@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:Here's the key information from the article in a way that is easy to understand and relevant to you: The article discusses the benefits of engaging in regular physical activity, such as walking, for older adults. It highlights how walking can improve overall health, boost mood, and prevent health conditions. The article also emphasizes the importance of finding safe and enjoyable walking routes in rural areas for older adults to stay active.
+age:65+
+ed:Bachelor's Degree
+nat:
+metro:Regional
+income:

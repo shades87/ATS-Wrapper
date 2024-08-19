@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses how Australians are increasingly turning to online shopping for their Christmas gifts. It highlights the convenience and safety of online shopping and provides tips on how to make the most of it during the holiday season. The article suggests keeping an eye out for deals, shopping early to avoid delays, and supporting local businesses by buying Australian-made products. Online shopping is presented as a great way to find unique gifts, support small businesses, and make shopping stress-free during the busy holiday season.
+age:35-65
+ed:
+nat:Australia
+metro:
+income:

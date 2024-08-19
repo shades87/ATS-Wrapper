@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:This article discusses the top trends in retirement planning for seniors over 65. It covers important topics like healthcare costs, social security benefits, investment strategies, and ways to maximize retirement savings. By keeping up with these trends, you can ensure a secure and enjoyable retirement.
+age:65+
+ed:Bachelor's Degree
+nat:
+metro:
+income:$100K+

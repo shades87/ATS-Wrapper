@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses the benefits of green spaces in cities for mental health and well-being. It emphasizes that spending time in nature can reduce stress, anxiety, and depression. The presence of parks and gardens in urban areas is essential for promoting physical activity, social interaction, and overall health. A study conducted in Australia showed that people living near green spaces reported better mental health. So, taking a walk in a nearby park or sitting under a tree can do wonders for your mind and body, providing a much-needed break from the hustle and bustle of city life.
+age:35-65
+ed:
+nat:Australia
+metro:Metro
+income:

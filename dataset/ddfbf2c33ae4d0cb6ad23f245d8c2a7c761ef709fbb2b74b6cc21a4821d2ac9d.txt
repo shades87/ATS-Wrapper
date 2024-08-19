@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of incorporating physical activity into daily routines for individuals over 65. It highlights how exercise can improve overall health, reduce the risk of chronic diseases, enhance mood, and increase independence. The article also emphasizes the importance of finding enjoyable activities that suit one's fitness level and interests. It suggests consulting with healthcare providers and starting with low-impact exercises before gradually increasing intensity.
+age:65+
+ed:
+nat:
+metro:
+income:$30K-$100K

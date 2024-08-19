@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of gardening for mental health and well-being. It highlights how gardening can reduce stress, boost mood, and improve overall mental health. Gardening is a therapeutic activity that can provide a sense of accomplishment and connection to nature. It is a great way to relax, exercise, and nurture plants while benefiting your mental and emotional well-being. So, if you're feeling stressed or overwhelmed, consider spending some time in your garden to reap these positive effects.
+age:35-65
+ed:
+nat:New Zealand
+metro:Regional
+income:Under $30K

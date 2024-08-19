@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses how city dwellers can enhance their well-being by incorporating green spaces into their urban lifestyles. It highlights the benefits of exposure to nature, such as reducing stress and boosting overall mental and physical health. The article suggests simple ways to connect with nature in the city, like visiting parks, gardening, or bringing plants indoors. These strategies can help urban residents achieve a better work-life balance and improve their quality of life.
+age:35-65
+ed:
+nat:
+metro:Metro
+income:$30K-$100K

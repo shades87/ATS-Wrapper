@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the importance of financial planning for retirement, especially for individuals over 65 living in rural areas of New Zealand with limited income. It highlights the need to carefully manage finances, set realistic goals, and explore different options to secure a comfortable retirement. It emphasizes the value of seeking professional advice and being proactive in planning for the future.
+age:65+
+ed:
+nat:New Zealand
+metro:Regional
+income:Under $30K

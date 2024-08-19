@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses how living in urban areas can help lower-income individuals access resources and opportunities that can improve their quality of life. It emphasizes the benefits of city living for those earning less than $30,000 a year in the United States.
+age:35-65
+ed:
+nat:United States
+metro:Metro
+income:Under $30K

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses ways in which low-income earners in Australia can stretch their budget and save money. It suggests tips such as creating a budget, prioritizing needs over wants, and utilizing community resources for assistance. By following these strategies, low-income individuals can better manage their finances and improve their financial situation.
+age:35-65
+ed:
+nat:Australia
+metro:
+income:Under $30K

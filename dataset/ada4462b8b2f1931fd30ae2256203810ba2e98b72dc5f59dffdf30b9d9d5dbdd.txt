@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses how individuals in the UK, particularly those over 65 and living in cities, with an income less than $30,000 a year, can benefit from certain financial assistance programs available to them. It emphasizes the importance of understanding and accessing these resources to help manage finances effectively.
+age:65+
+ed:
+nat:England
+metro:Metro
+income:Under $30K

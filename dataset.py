@@ -1,6 +1,6 @@
 import sys
 import os, glob
-
+import time
 
 from newspaper import Article 
 from newspaper import Config
@@ -319,3 +319,111 @@ def load_data():
     return data
 
 #create_data()
+def create_data_auto_grab_article():
+    edDemo = ["", "High School", "Bachelor's Degree", "PHD"]
+    ageDemo = ["", "Under 15", "15-35", "35-65", "65+"]
+    natDemo = ["", "Australia", "New Zealand", "England", "United States"]
+    metroDemo = ["", "Metro", "Regional"]
+    incomeDemo = ["", "Under $30K", "$30K-$100K", "$100K+"]
+
+    ed = 0;
+    age = 0;
+    nat = 0;
+    metro = 0;
+    income = 0;
+    i = 1;
+    index = 0;
+
+    articles = ["https://www.theguardian.com/australia-news/article/2024/aug/17/nsw-councillor-nathan-tilbury-all-smiles-after-leaving-liberal-party-days-before-nomination-fiasco-ntwnfb",
+                "https://www.theguardian.com/australia-news/article/2024/aug/17/melbourne-symphony-orchestra-board-promises-independent-review-after-musicians-revolt-over-gaza-jayson-gillham-controversy-ntwnfb",
+                "https://www.theguardian.com/football/article/2024/aug/16/manchester-united-fulham-premier-league-match-report",
+                "https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912",
+                "https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440",
+                "https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410",
+                "https://www.rnz.co.nz/news/national/525434/no-more-needles-how-an-insulin-pill-could-revolutionise-diabetes-treatment",
+                "https://www.rnz.co.nz/news/political/525344/waitangi-tribunal-calls-for-treaty-principles-bill-to-be-abandoned-in-scathing-report",
+                "https://www.rnz.co.nz/news/national/525379/near-100-house-blenheim-development-fast-tracked",
+                "https://edition.cnn.com/2024/08/16/business/harris-price-gouging-ban-inflation/index.html",
+                "https://edition.cnn.com/2024/07/31/tech/instagram-story-archives-deletion/index.html",
+                "https://edition.cnn.com/2024/08/16/investing/stocks-are-rallying-again-are-they-out-of-the-woods/index.html",
+                "https://www.bbc.com/news/articles/c5ydp4wg9pjo",
+                "https://www.bbc.com/news/articles/cgl2xjxlz3xo",
+                "https://www.bbc.com/news/articles/c1d77yq9zz2o",
+                "https://thedailyaus.com.au/stories/five-people-charged-over-matthew-perrys-death/",
+                "https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084",
+                "https://www.theguardian.com/australia-news/article/2024/aug/16/rare-order-given-to-protect-wiradjuri-sacred-site-from-goldmine-tailings-dam",
+                "https://www.theguardian.com/australia-news/article/2024/aug/16/nsw-logged-112000-children-as-at-risk-of-serious-harm-last-year-it-has-no-idea-what-happened-to-84000-of-them-ntwnfb",
+                "https://thedailyaus.com.au/stories/what-is-going-on-with-the-nsw-liberal-party/",
+                "https://thedailyaus.com.au/stories/wages-grew-4-1/",
+                "https://thedailyaus.com.au/stories/sunday-was-the-hottest-day-on-record-then-monday-beat-it/",
+                "https://thedailyaus.com.au/stories/heres-why-linda-reynolds-and-brittany-higgins-are-in-a-defamation-court-case/",
+                "https://thedailyaus.com.au/stories/nsw-plans-to-scrap-a-ban-on-standing-and-drinking-outside-pubs/"]
+    
+    articlesTwo = [ "https://edition.cnn.com/2024/08/15/asia/afghanistan-how-girls-women-learning-intl-hnk/index.html",
+        "https://edition.cnn.com/2024/08/16/europe/sudzha-russia-ukraine-streets-intl-latam/index.html",
+        "https://edition.cnn.com/2024/08/16/middleeast/palestine-womens-soccer-return-intl-hnk-spt/index.html",
+        "https://edition.cnn.com/2024/08/16/middleeast/gaza-ceasefire-talks-underway-what-to-know-intl/index.html?iid=cnn_buildContentRecirc_end_recirc",
+        "https://edition.cnn.com/2024/08/12/sport/raygun-breaking-paris-olympics-spt-intl/index.html",
+        "https://edition.cnn.com/2024/08/15/travel/melbourne-electric-scooter-rental-ban-intl-hnk/index.html",
+        "https://edition.cnn.com/2024/08/11/sport/netball-olympics-womens-sport-spt/index.html",
+        "https://edition.cnn.com/2024/07/25/sport/matt-dawson-amputates-finger-olympics-intl-spt/index.html",
+        "https://www.bbc.com/news/articles/cgl2xjxlz3xo",
+        "https://www.bbc.com/news/articles/cdd7enz9r0qo",
+        "https://www.bbc.com/news/articles/cp8nv5384rmo",
+        "https://www.bbc.com/news/articles/cly3wl7nzj8o",
+        "https://www.bbc.com/news/articles/c4ge3561x35o",
+        "https://www.bbc.com/news/articles/c7v5zgelqjyo",
+        "https://www.bbc.com/news/articles/c1l5v8r804mo",
+        "https://www.bbc.com/news/articles/cly84x8rejjo",
+        "https://www.1news.co.nz/2024/08/17/new-zealand-diplomat-reportedly-tied-up-in-paris-armed-robbery/",
+        "https://www.1news.co.nz/2024/08/17/kamala-harris-unveils-plan-to-lower-costs-taxes-for-us-middle-class/",
+        "https://www.1news.co.nz/2024/08/17/inside-a-russian-town-seized-by-ukraine-forces/",
+        "https://www.1news.co.nz/2024/08/17/harry-meghan-protected-in-colombia-by-ballistic-briefcase/",
+        "https://www.1news.co.nz/2024/08/17/polio-found-in-10-month-old-gaza-child-health-officials-say/",
+        "https://www.1news.co.nz/2024/08/16/analysis-how-under-pressure-all-blacks-can-avenge-argentina-defeat/",
+        "https://www.1news.co.nz/2024/08/17/olympic-gold-medallist-lydia-ko-among-leaders-at-halfway-of-scottish-open/",
+        "https://www.1news.co.nz/2024/08/15/is-it-ok-to-lie-to-someone-with-dementia/"]
+
+    articleText = get_article_text(articlesTwo[index])
+    print(articleText)
+    start_time = time.time()
+    for a in range(4):
+        ed = a
+        print("a: " + str(a))
+        for b in range(5):
+            age = b
+            for c in range(5):
+                nat = c
+                for d in range(3):
+                    metro = d
+                    for e in range(4):
+                        income = e
+                        user = demographics(age, ed, income, metro, nat)
+                        print(user)
+                        #Every 50 summaries change the article to be summarised
+                         #Get article
+                        articlesURL = articlesTwo[index]
+                        #summarise and save
+                        #print("article: " + article)
+                        summary = summarise(user, articleText)
+                        save_summary(articleText, summary, articlesURL, edDemo[ed], natDemo[nat], incomeDemo[income], ageDemo[age], metroDemo[metro])
+
+
+                        if (i%50 == 0):
+                           
+
+
+                            index = index + 1
+                            articleText = get_article_text(articlesTwo[index])
+                            print(articleText)
+                            
+                        
+                        #Increase the index, should go from 1 to 1200 (the number of permutations of the demographics)
+                        #Every 50 summaries swap articles to get a range of summaries
+                        i = i + 1
+                        
+    endtime = time.time()
+    timedif = start_time - endtime
+    print(f"Total training time: {timedif:.2f} seconds")
+
+#create_data_auto_grab_article()

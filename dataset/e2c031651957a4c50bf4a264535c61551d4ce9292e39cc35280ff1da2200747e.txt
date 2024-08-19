@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses the importance of budgeting and saving money, especially for city dwellers earning less than $30,000 a year. It emphasizes practical tips and strategies to help maximize financial resources and plan for a more secure future. By following these suggestions, individuals can better navigate their finances and work towards their financial goals.
+age:35-65
+ed:
+nat:
+metro:Metro
+income:Under $30K

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses the benefits of city living for high-income earners. It highlights the convenience, amenities, culture, and opportunities available in urban settings that cater to a luxurious lifestyle. It emphasizes how city living can enhance the quality of life for individuals with higher incomes.
+age:35-65
+ed:
+nat:
+metro:Metro
+income:$100K+

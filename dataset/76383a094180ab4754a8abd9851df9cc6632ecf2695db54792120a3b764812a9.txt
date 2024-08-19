@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:"Discover How Rural Communities Benefit from Investing in Broadband Infrastructure: From improved access to healthcare and education to increased economic opportunities, expanding broadband in rural areas can positively impact your community. Learn more about the benefits and opportunities available to you!"
+age:35-65
+ed:
+nat:United States
+metro:Regional
+income:$30K-$100K

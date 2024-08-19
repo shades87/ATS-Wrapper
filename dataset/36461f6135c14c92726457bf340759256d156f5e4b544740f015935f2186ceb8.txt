@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the importance of budgeting and saving money, especially for those living in urban areas on a lower income. It offers practical tips for managing finances effectively, such as creating a budget, tracking expenses, and prioritizing saving goals. The article aims to help readers make the most of their income and improve their financial well-being in a city setting.
+age:35-65
+ed:Bachelor's Degree
+nat:England
+metro:Metro
+income:Under $30K

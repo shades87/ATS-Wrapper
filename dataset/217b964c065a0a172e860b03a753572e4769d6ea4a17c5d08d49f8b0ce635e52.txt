@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the importance of staying active and social as you age, particularly for those over 65 in urban areas like cities in the UK. It emphasizes the benefits of participating in community activities, clubs, and fitness classes to maintain physical and mental well-being. The article suggests that engaging in these social and physical activities can greatly improve overall quality of life for older adults.
+age:65+
+ed:
+nat:England
+metro:Metro
+income:$30K-$100K

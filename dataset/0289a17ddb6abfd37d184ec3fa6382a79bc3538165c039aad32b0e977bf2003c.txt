@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses the benefits of investing in solar power for rural households in New Zealand, emphasizing cost savings and environmental impact. It highlights the potential for users to save money on electricity bills and reduce their carbon footprint by harnessing the power of the sun. The article could be of interest to you as it explores how investing in solar power can provide long-term financial and environmental benefits for individuals living in rural areas, like yourself.
+age:15-35
+ed:
+nat:New Zealand
+metro:Regional
+income:$100K+

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses how urban design can impact mental health and overall well-being in city residents. It explores the importance of creating green spaces, pedestrian-friendly streets, and access to public transportation to promote a healthier urban environment. The article highlights the benefits of incorporating nature into city planning to reduce stress and improve mental health. It also emphasizes the need for policymakers to prioritize mental health when designing cities.
+age:15-35
+ed:
+nat:England
+metro:Metro
+income:

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses affordable ways to explore the city; from free museums and parks to budget-friendly food markets and events. It showcases how city living can be enjoyable and accessible without breaking the bank.
+age:15-35
+ed:
+nat:England
+metro:Metro
+income:Under $30K

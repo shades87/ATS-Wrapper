@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of senior citizens in the UK participating in arts and crafts activities. It highlights how engaging in these activities can improve mental well-being, reduce feelings of loneliness, and provide a sense of purpose for older individuals. The article suggests that these activities can be a fun and rewarding way for seniors to stay active and socialize, leading to a happier and healthier lifestyle.
+age:65+
+ed:
+nat:England
+metro:
+income:Under $30K

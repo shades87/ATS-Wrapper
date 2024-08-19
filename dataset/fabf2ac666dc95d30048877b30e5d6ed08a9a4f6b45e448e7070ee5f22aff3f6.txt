@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the importance of maintaining a healthy lifestyle in older age to prevent cognitive decline. It emphasizes the significance of physical exercise, a balanced diet, social interactions, and intellectual stimulation in keeping the mind sharp. It highlights how these lifestyle factors can positively impact brain health and overall well-being in seniors.
+age:65+
+ed:
+nat:United States
+metro:
+income:$30K-$100K

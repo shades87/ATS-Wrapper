@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:This article discusses the benefits of a vegan diet for young adults in the UK. It highlights how a plant-based diet can improve health, increase energy levels, and reduce the risk of diseases. It also mentions the environmental impact of meat consumption and provides tips for transitioning to a vegan lifestyle.
+age:15-35
+ed:
+nat:England
+metro:
+income:

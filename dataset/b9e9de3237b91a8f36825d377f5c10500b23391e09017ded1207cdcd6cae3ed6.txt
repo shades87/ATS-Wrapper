@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the importance of financial planning for seniors on a limited income, providing helpful tips and resources for managing money effectively. It emphasizes the significance of budgeting, saving, and seeking assistance from financial advisors to ensure a secure financial future during retirement.
+age:65+
+ed:
+nat:
+metro:
+income:Under $30K

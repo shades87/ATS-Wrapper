@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:Learn how to effectively manage stress in a busy urban lifestyle to improve your overall well-being. Discover techniques like mindfulness, exercise, and healthy habits to reduce stress levels. Prioritize self-care to achieve a better work-life balance for a happier and healthier life.
+age:35-65
+ed:Bachelor's Degree
+nat:United States
+metro:Metro
+income:$100K+

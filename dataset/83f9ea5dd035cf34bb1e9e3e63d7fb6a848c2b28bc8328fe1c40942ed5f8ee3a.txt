@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses ways city dwellers in the United States can enhance their urban gardens. It provides tips on selecting plants suitable for urban environments and maximizing small spaces efficiently. Additionally, it highlights the benefits of urban gardening, such as improving air quality and reducing stress. Overall, it offers practical advice for creating beautiful and sustainable gardens in city settings.
+age:35-65
+ed:
+nat:United States
+metro:Metro
+income:$100K+

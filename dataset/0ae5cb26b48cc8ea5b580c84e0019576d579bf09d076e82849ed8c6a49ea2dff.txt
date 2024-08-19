@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses the benefits of starting a vegetable garden at home, highlighting how it can save money on groceries, provide healthier produce, and be a fun and rewarding activity for people living in rural areas. It mentions the joy of growing your own food, the satisfaction of harvesting fresh vegetables, and the financial savings that can come from gardening. Overall, it encourages readers to consider starting their own vegetable garden for a fulfilling and cost-effective way to enjoy fresh produce.
+age:15-35
+ed:
+nat:United States
+metro:Regional
+income:$30K-$100K

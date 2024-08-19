@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the benefits of urban gardening for city dwellers in the UK. It highlights how urban gardening can provide a relaxing escape from city life, promote healthier eating habits, and contribute to sustainability. The article appeals to readers' desire for a more balanced and sustainable lifestyle, encouraging them to consider starting their own urban garden.
+age:35-65
+ed:Bachelor's Degree
+nat:England
+metro:Metro
+income:$100K+

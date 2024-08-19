@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:Learn about the benefits of investing in a Roth IRA for your retirement savings. Discover how contributing to a Roth IRA can help you grow your wealth tax-free, provide flexibility in withdrawals, and offer estate planning advantages. Consider starting a Roth IRA to secure your financial future.
+age:35-65
+ed:Bachelor's Degree
+nat:United States
+metro:Metro
+income:$30K-$100K

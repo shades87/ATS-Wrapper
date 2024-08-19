@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the advantages of investing in sustainable and environmentally-friendly funds for long-term financial growth. It highlights how these funds not only generate profits but also contribute to positive social and environmental impacts. Moreover, it emphasizes that such investments align with personal values and promote a more sustainable future.
+age:35-65
+ed:Bachelor's Degree
+nat:England
+metro:
+income:$100K+

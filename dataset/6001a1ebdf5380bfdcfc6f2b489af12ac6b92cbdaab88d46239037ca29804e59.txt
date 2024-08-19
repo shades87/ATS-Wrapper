@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:Learn how to make the most of your rural lifestyle with these tips outlined in a recent article. Embrace the beauty of nature and find ways to connect with your rural community. Discover strategies for maintaining a happy and fulfilling life in the countryside.
+age:35-65
+ed:
+nat:England
+metro:Regional
+income:

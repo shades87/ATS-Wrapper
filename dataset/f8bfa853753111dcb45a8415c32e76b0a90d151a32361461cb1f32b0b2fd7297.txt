@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of gardening for seniors, highlighting how it can improve physical health, mental well-being, and provide a sense of purpose. It mentions how gardening can be a rewarding activity for older individuals, offering exercise, stress relief, and the opportunity to grow their own fresh produce. It suggests that seniors living in cities can still enjoy gardening through community gardens or smaller indoor setups.
+age:65+
+ed:
+nat:United States
+metro:Metro
+income:$30K-$100K

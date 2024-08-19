@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses the benefits of starting a side hustle while having a full-time job. It highlights how having a side business can provide extra income, flexibility, and a sense of fulfillment. It also suggests various side hustle ideas that can be pursued alongside one's primary job. Starting a side hustle can be a great way to explore your passions, make extra money, and potentially transition to full-time entrepreneurship in the future.
+age:15-35
+ed:
+nat:United States
+metro:
+income:$30K-$100K

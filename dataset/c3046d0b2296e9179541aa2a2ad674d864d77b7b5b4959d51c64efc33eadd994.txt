@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses the importance of sustainable living in rural areas. It emphasizes the benefits of incorporating eco-friendly practices into daily life, such as reducing waste and conserving resources. These practices not only help the environment but can also save money in the long run. It is vital for rural residents to embrace sustainable living to create a healthier and more cost-effective lifestyle.
+age:35-65
+ed:
+nat:
+metro:Regional
+income:$30K-$100K

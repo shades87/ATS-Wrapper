@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the benefits of adopting a Mediterranean diet for improving overall health, including reducing the risk of heart disease, diabetes, and cognitive decline. It emphasizes the importance of incorporating fresh fruits, vegetables, whole grains, and healthy fats into daily meals. The Mediterranean diet is known for its delicious and diverse recipes, making it a practical and enjoyable choice for those looking to enhance their well-being.
+age:35-65
+ed:Bachelor's Degree
+nat:England
+metro:
+income:Under $30K

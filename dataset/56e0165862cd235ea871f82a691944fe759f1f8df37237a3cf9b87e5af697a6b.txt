@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:This article is about tips for staying healthy and active as you get older. It emphasizes the importance of regular exercise, maintaining a balanced diet, staying socially connected, and getting regular check-ups from your healthcare provider. These habits can help you enjoy a vibrant and active lifestyle in your golden years.
+age:65+
+ed:
+nat:New Zealand
+metro:
+income:$100K+

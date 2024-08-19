@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses the benefits of practicing mindfulness for stress relief. It explains how being present in the moment can reduce anxiety, improve focus, and enhance overall well-being. By incorporating simple mindfulness techniques into daily routines, individuals can experience a greater sense of calm and mental clarity.
+age:35-65
+ed:
+nat:
+metro:
+income:

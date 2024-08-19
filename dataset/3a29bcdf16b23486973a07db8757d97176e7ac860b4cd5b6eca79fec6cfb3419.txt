@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of seniors staying physically active to maintain their health and well-being. It emphasizes the positive impact of exercise on overall health, such as improving strength, balance, and mental well-being. The article also highlights the importance of finding activities that are enjoyable and suitable for older adults in New Zealand to stay active and healthy.
+age:65+
+ed:
+nat:New Zealand
+metro:
+income:

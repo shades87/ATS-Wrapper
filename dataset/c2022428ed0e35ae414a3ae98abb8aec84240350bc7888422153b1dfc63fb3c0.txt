@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the importance of effective communication in the workplace. It emphasizes the need for clear and concise communication in order to avoid misunderstandings and improve productivity. The article provides tips and strategies for enhancing communication skills, such as active listening and using appropriate language. It also highlights the impact of good communication on job satisfaction and overall success in the workplace.
+age:35-65
+ed:
+nat:New Zealand
+metro:
+income:$30K-$100K

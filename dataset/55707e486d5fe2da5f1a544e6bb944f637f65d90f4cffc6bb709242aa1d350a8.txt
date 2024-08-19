@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of physical activity for older adults, emphasizing that it is never too late to start exercising. Regular physical activity can improve overall health, strengthen bones and muscles, boost mood, and reduce the risk of chronic diseases. It is important to find activities that are enjoyable and suitable for individual fitness levels. It is recommended to consult a doctor before starting a new exercise routine.
+age:65+
+ed:
+nat:United States
+metro:Metro
+income:$100K+

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of outdoor activities for seniors living in rural areas of the United States. It highlights how spending time in nature can improve physical and mental well-being, increase social interactions, and provide a sense of connection to the environment. The article emphasizes the importance of seniors engaging in outdoor activities to maintain a healthy and active lifestyle in their rural communities.
+age:65+
+ed:
+nat:United States
+metro:Regional
+income:

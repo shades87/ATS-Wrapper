@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses how rural areas may lack access to high-speed internet, hindering economic opportunities for residents. It underscores the importance of improving this infrastructure to boost rural economies and provide residents with better job prospects and educational opportunities.
+age:65+
+ed:Bachelor's Degree
+nat:
+metro:Regional
+income:Under $30K

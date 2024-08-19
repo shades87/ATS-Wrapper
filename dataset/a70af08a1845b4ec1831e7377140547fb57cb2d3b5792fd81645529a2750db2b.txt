@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of a healthy diet for seniors, especially those living in rural areas like yourself in Australia. It explains how proper nutrition can help you stay active, maintain a strong immune system, and avoid health issues common in older age. It's important to include a variety of fruits, vegetables, whole grains, and lean proteins in your meals. Additionally, staying hydrated and limiting processed foods can also have a positive impact on your overall health. It's a great way to ensure you remain strong and active as you age.
+age:65+
+ed:
+nat:Australia
+metro:Regional
+income:$30K-$100K

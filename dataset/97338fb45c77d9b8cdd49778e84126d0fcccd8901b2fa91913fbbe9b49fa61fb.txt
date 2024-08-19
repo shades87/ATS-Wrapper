@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article talks about the benefits of city living for young people. It mentions that cities offer plenty of job opportunities, social activities, cultural experiences, and public transportation, making them a great place for young adults. As a city dweller on a tight budget, you can still enjoy all these advantages without needing a car. So, if you're looking for a vibrant and affordable place to live and work, consider making a city your home.
+age:15-35
+ed:
+nat:United States
+metro:Metro
+income:Under $30K

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:Sure, here's a summary of the article for you: "Living in a city can offer a vibrant lifestyle with endless opportunities for entertainment, dining, and cultural experiences. As a city dweller over 65 with a comfortable income, you have the financial means to fully enjoy all the city has to offer. From upscale restaurants and theater productions to recreational activities and community events, your city is a playground waiting to be explored. Take advantage of your urban surroundings and live your best life in the heart of the city."
+age:65+
+ed:
+nat:
+metro:Metro
+income:$100K+

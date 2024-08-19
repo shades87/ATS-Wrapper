@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses tips on how to save money while grocery shopping, including planning meals in advance, making a shopping list, buying in bulk, and using coupons. It highlights the importance of comparing prices and being mindful of marketing tactics to avoid overspending. By following these strategies, you can save money on groceries and make your budget go further.
+age:35-65
+ed:
+nat:
+metro:
+income:Under $30K

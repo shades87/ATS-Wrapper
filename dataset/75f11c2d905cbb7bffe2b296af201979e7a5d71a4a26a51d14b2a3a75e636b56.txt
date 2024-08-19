@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the importance of staying active and engaged for older adults in Australia. It highlights the benefits of physical activity and social connections for maintaining a healthy and fulfilling lifestyle. The article encourages seniors to participate in activities that interest them and to seek out community resources for support. It emphasizes the value of staying active and connected in later years to enhance overall well-being.
+age:65+
+ed:
+nat:Australia
+metro:
+income:

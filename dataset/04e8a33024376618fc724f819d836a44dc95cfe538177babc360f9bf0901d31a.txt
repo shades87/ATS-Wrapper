@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the importance of financial planning and retirement savings for individuals in New Zealand. It highlights the significance of setting financial goals, creating a budget, and making informed investment decisions. The article emphasizes the need for wealth management services to help those earning over $100,000 a year manage their finances effectively and secure their future.
+age:35-65
+ed:
+nat:New Zealand
+metro:
+income:$100K+

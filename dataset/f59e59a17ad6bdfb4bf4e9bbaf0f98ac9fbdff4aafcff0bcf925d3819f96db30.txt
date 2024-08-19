@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:"The article discusses the rise of sustainable transportation options in urban areas like electric scooters and bikes. These eco-friendly alternatives help reduce pollution and promote healthier lifestyles. They are becoming more popular among city dwellers seeking efficient and environmentally friendly ways to get around. So, why not give them a try and contribute to a greener city while enjoying the benefits of easy and affordable transportation?"
+age:15-35
+ed:
+nat:England
+metro:Metro
+income:$30K-$100K

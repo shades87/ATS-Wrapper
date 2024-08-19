@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of living in rural areas for older individuals with a high income. It highlights the advantages of a slower pace of life, lower cost of living, and access to nature. It also emphasizes the importance of community and social connections in rural areas for older individuals.
+age:65+
+ed:
+nat:
+metro:Regional
+income:$100K+

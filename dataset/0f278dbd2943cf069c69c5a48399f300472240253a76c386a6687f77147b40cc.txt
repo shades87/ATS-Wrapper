@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of investing in rural real estate in the UK. It highlights the potential for high returns, low competition, and the opportunity to own unique properties with character. It emphasizes the value of investing in rural areas for those with higher income, as it can be a lucrative long-term strategy.
+age:35-65
+ed:
+nat:England
+metro:Regional
+income:$100K+

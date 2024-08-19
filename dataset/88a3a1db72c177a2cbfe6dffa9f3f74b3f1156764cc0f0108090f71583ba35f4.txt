@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of staying active and engaged as we age, especially for those over 65 in rural areas of New Zealand. It highlights the importance of social interaction, physical activity, and mental stimulation in maintaining overall health and well-being in older adults.
+age:65+
+ed:
+nat:New Zealand
+metro:Regional
+income:

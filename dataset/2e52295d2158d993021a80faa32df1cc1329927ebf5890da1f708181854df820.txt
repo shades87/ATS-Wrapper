@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the growing trend of remote work opportunities in the UK, particularly in rural areas. It explores the benefits of working remotely, such as flexibility and work-life balance. It highlights how remote work can help individuals in rural areas access job opportunities and earn a good income without having to commute to urban areas. The article aims to show how remote work can be a valuable option for those living in rural areas with a Bachelor's degree and an income range of £23,000 to £77,000 a year.
+age:35-65
+ed:Bachelor's Degree
+nat:England
+metro:Regional
+income:$30K-$100K

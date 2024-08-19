@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of urban gardening in the UK, highlighting how city dwellers can grow their own fruits and vegetables regardless of limited space. It explains that gardening in cities can help reduce stress, provide fresh produce, and contribute to a healthier lifestyle. The article emphasizes the convenience and satisfaction of growing your own food even in a city setting.
+age:35-65
+ed:
+nat:England
+metro:Metro
+income:$30K-$100K

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of staying active and engaging in physical activities for individuals over 65. It highlights how regular exercise can improve overall health, prevent illness, boost mood, and increase independence. The article also emphasizes the importance of finding activities that are enjoyable and tailored to one's abilities.
+age:65+
+ed:
+nat:United States
+metro:Metro
+income:

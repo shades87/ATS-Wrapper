@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of community gardens in rural areas. It explains how community gardens can provide fresh produce, strengthen social connections, improve mental well-being, and offer a sense of community for residents. It encourages low-income individuals to participate in community gardening as a way to access affordable and nutritious food.
+age:35-65
+ed:
+nat:United States
+metro:Regional
+income:Under $30K

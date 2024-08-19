@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of moving to a retirement village. It highlights the peace of mind that comes with knowing you're in a secure and supportive community, along with the freedom to enjoy various amenities and activities. It also emphasizes the financial advantages, such as freeing up equity by selling your home. Such a decision could be particularly appealing to someone over 65, living in a city in New Zealand, earning over $100,000 a year.
+age:65+
+ed:
+nat:New Zealand
+metro:Metro
+income:$100K+

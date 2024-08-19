@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the importance of sustainable farming practices in rural Australia. It emphasizes the need for farmers to implement eco-friendly methods to protect the environment and ensure long-term productivity. The article highlights the benefits of sustainable agriculture, such as preserving natural resources and supporting biodiversity. It also encourages farmers to adopt practices like water conservation and organic farming for a more sustainable future.
+age:35-65
+ed:
+nat:Australia
+metro:Regional
+income:

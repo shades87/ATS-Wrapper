@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the importance of urban farming in New Zealand cities for individuals like you who live in urban areas. It highlights how growing your own food in city spaces can help save money on grocery bills, provide fresh produce, and promote sustainable living. It also emphasizes the benefits of community gardens and how they can bring neighborhoods together while improving access to healthy, affordable food options. Consider exploring urban farming opportunities in your city to enjoy these advantages and contribute to a greener, healthier lifestyle.
+age:35-65
+ed:
+nat:New Zealand
+metro:Metro
+income:$30K-$100K

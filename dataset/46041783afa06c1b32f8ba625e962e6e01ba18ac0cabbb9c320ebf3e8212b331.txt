@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of incorporating fish into your diet, particularly for those over 65 in the United States who earn over $100,000 a year. It explains how the omega-3 fatty acids in fish can improve brain function and heart health. So, adding fish to your meals can be a smart choice for your well-being and overall health.
+age:65+
+ed:
+nat:United States
+metro:
+income:$100K+

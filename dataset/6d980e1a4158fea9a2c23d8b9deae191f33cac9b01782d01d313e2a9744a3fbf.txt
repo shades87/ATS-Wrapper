@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the benefits of socializing for older adults living in cities, especially those on a lower income. It emphasizes the positive impact of staying connected with others on mental and physical well-being. With a Bachelor's degree, you may find tips on how to engage in social activities that best suit your interests and lifestyle while living in a city. This can foster a sense of community and support your overall health and happiness.
+age:65+
+ed:Bachelor's Degree
+nat:
+metro:Metro
+income:Under $30K

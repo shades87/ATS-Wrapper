@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the importance of retirement planning, particularly for those over 65 in Australia who earn less than $30,000 a year. It emphasizes the need to carefully manage finances and seek professional advice to ensure a secure and comfortable retirement. It also highlights the benefits of government support programs and resources available to help individuals in this demographic plan for their future.
+age:65+
+ed:
+nat:Australia
+metro:
+income:Under $30K

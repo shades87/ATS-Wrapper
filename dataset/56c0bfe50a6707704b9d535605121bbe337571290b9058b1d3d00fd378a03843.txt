@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses how the rising temperatures due to climate change are impacting New Zealand's glaciers. As the glaciers shrink, they pose threats such as flooding and increased melting. It's important to understand these changes and their potential consequences to protect the environment and communities.
+age:35-65
+ed:
+nat:New Zealand
+metro:
+income:

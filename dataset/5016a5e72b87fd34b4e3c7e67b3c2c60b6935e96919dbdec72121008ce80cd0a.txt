@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of sustainable farming practices for the environment and the future of farming. It highlights how sustainable farming can help protect our land and resources for future generations. The article also emphasizes the importance of rural communities in implementing sustainable farming methods and emphasizes the economic benefits for farmers. Overall, it encourages a shift towards more sustainable farming practices for a better future.
+age:35-65
+ed:
+nat:New Zealand
+metro:Regional
+income:$30K-$100K

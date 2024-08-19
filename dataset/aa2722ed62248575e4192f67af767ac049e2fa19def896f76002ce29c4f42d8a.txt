@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the impact of climate change on New Zealand's native bird species. Due to rising temperatures, many birds are at risk of extinction, including the iconic kiwi bird. Conservation efforts are being made to protect these species, but urgent action is needed to prevent further decline.
+age:35-65
+ed:Bachelor's Degree
+nat:New Zealand
+metro:
+income:Under $30K

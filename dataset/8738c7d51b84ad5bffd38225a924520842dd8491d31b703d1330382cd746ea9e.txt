@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the importance of estate planning for Australians over 65. It emphasizes the significance of making a will, setting up power of attorney, and considering a testamentary trust to protect assets and ensure loved ones are taken care of. The article highlights how estate planning can provide peace of mind and security, especially for those with assets or property. It also emphasizes the importance of seeking professional advice to navigate the complexities of estate planning.
+age:65+
+ed:
+nat:Australia
+metro:
+income:$30K-$100K

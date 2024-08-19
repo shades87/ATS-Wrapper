@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses a new trend in urban farming, where individuals in cities are turning to vertical farming to grow their own produce. This innovative approach involves utilizing vertical spaces within city buildings to create sustainable farms that can produce fresh fruits and vegetables. Vertical farming allows city dwellers to have access to locally grown, organic produce right in their own neighborhoods. Additionally, this method of farming is beneficial for the environment as it reduces the need for transportation of food and minimizes food waste. Overall, vertical farming in urban areas is gaining popularity as a way to promote healthier and more sustainable food options for city residents.
+age:15-35
+ed:
+nat:United States
+metro:Metro
+income:

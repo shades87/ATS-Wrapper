@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the importance of staying active as you get older, especially if you live in a city like Australia where there are many opportunities to do so. It highlights the benefits of exercise for overall health and well-being, and provides tips on how to incorporate physical activity into daily life. It also emphasizes the social aspect of staying active, suggesting joining groups or classes to meet new people and stay motivated.
+age:65+
+ed:
+nat:Australia
+metro:Metro
+income:

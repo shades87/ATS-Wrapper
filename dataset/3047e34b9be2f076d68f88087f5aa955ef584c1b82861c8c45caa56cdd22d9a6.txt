@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of joining a local senior center, which can provide a variety of activities, resources, social connections, and support for older adults. It mentions that many seniors find these centers to be valuable and enjoyable places to spend time as they offer exercise classes, educational programs, social events, health services, and more. Joining a senior center in your city can be a great way to stay active, meet new people, and enhance your overall well-being in retirement.
+age:65+
+ed:
+nat:
+metro:Metro
+income:$30K-$100K

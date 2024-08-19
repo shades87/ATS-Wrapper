@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses the importance of incorporating sustainable practices in urban living to combat climate change. It emphasizes how individuals can make a positive impact through simple changes like biking or using public transportation. By adopting eco-friendly habits, we can contribute to a healthier planet and a better future for all.
+age:15-35
+ed:
+nat:United States
+metro:Metro
+income:$100K+

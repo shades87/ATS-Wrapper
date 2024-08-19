@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of the COVID-19 vaccine for those over 65 in the UK, particularly in city environments. It highlights the importance of getting vaccinated to protect against the virus and encourages older individuals to prioritize their health by getting vaccinated.
+age:65+
+ed:
+nat:England
+metro:Metro
+income:

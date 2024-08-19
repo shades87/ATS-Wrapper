@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses the benefits of incorporating an exercise routine into your daily life, especially for those living in cities. It highlights how regular physical activity can improve your overall well-being, boost your mood, and increase your energy levels. It suggests simple ways to stay active in urban environments, such as walking or cycling instead of driving, joining community fitness classes, or utilizing outdoor spaces for workouts. The article aims to inspire city dwellers to prioritize their health and fitness by making small but meaningful changes to their daily routine.
+age:35-65
+ed:
+nat:Australia
+metro:Metro
+income:$30K-$100K

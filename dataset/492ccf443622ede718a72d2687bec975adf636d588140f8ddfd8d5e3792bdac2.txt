@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the benefits of mindfulness practices for reducing stress and improving overall well-being. It explains how mindfulness can help people better manage their emotions and react more calmly in challenging situations. The article emphasizes the importance of incorporating mindfulness into daily routines to experience its positive effects on mental and physical health.
+age:35-65
+ed:Bachelor's Degree
+nat:United States
+metro:
+income:$30K-$100K

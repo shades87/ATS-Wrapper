@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:Article discusses the benefits of rural living, like lower living costs, less congestion, and closer community connections. It highlights how rural areas offer a quieter, more affordable lifestyle with opportunities to enjoy nature and outdoor activities.
+age:15-35
+ed:
+nat:England
+metro:Regional
+income:Under $30K

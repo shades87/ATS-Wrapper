@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses the benefits of incorporating urban gardening into city living. It highlights how growing plants can provide a sense of community, a connection to nature, and access to fresh produce. It emphasizes how urban gardening can be a rewarding and sustainable activity for those living in cities.
+age:35-65
+ed:
+nat:
+metro:Metro
+income:

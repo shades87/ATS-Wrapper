@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:This article discusses the benefits of participating in community activities for older adults living in rural areas in the United States. It highlights how being active in local groups and events can improve social connections and overall well-being. Studies show that engaging in community activities can positively impact mental health and help combat feelings of loneliness. So, if you're looking to stay connected and boost your happiness, getting involved in your rural community could be a great idea!
+age:65+
+ed:
+nat:United States
+metro:Regional
+income:$30K-$100K

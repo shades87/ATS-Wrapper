@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:This article discusses the benefits of urban gardening in the UK, highlighting how city-dwellers can grow their own produce even with limited space. It emphasizes the positive impact of gardening on mental well-being and the environment. The article motivates readers to consider starting their own urban garden, showcasing how it can be a fulfilling and practical way to connect with nature and promote sustainability in city living.
+age:35-65
+ed:
+nat:England
+metro:Metro
+income:

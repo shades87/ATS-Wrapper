@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of implementing sustainable farming practices, such as using renewable energy sources and reducing waste, to help farmers in rural Australia improve their livelihoods. By adopting eco-friendly techniques, farmers can not only protect the environment but also save on costs and increase their profits. This approach could be particularly appealing to someone like you, earning over $100,000 a year and residing in a rural area in Australia, fostering a more sustainable future for both the land and your finances.
+age:35-65
+ed:
+nat:Australia
+metro:Regional
+income:$100K+

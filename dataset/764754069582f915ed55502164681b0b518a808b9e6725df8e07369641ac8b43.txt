@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses ways to save money on groceries by sharing tips such as planning meals, making a shopping list, buying products in bulk, and using coupons. It emphasizes the benefits of these strategies to help save money and stick to a budget. It suggests being mindful of grocery expenses and making smart choices while shopping to make the most of your money.
+age:35-65
+ed:
+nat:New Zealand
+metro:
+income:Under $30K

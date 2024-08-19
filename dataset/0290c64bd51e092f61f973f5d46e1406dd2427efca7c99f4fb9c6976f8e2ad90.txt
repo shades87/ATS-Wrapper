@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the benefits of outdoor fitness activities in rural areas. It highlights the advantages of exercising in nature and the positive impact on physical and mental well-being. The piece also emphasizes the importance of incorporating outdoor workouts into daily routines, given the accessibility of natural spaces in rural areas.
+age:35-65
+ed:Bachelor's Degree
+nat:New Zealand
+metro:Regional
+income:

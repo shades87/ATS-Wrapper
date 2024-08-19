@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses ways for young adults in the US who earn less than $30,000 a year to save money by making small changes in their daily routines. It provides tips on how to cut costs on groceries, transportation, and entertainment. These tips can help young adults manage their finances better and save money for their future.
+age:15-35
+ed:
+nat:United States
+metro:
+income:Under $30K

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the importance of retirement planning for Australians over 65 who earn over $100,000 a year. It emphasizes the need to carefully manage savings, investments, and superannuation to secure a comfortable retirement. Strategies such as diversifying investments and seeking professional financial advice are recommended to ensure financial stability in later years.
+age:65+
+ed:
+nat:Australia
+metro:
+income:$100K+

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of investing in a Lifetime ISA (Individual Savings Account) in the UK. By putting money into a Lifetime ISA, individuals can save for their first home or retirement with the added bonus of receiving a government bonus of up to 25%. This tax-efficient savings option allows individuals to secure their financial future while getting extra help from the government. It's a smart way to save and grow your money for the long term.
+age:35-65
+ed:
+nat:England
+metro:
+income:$30K-$100K

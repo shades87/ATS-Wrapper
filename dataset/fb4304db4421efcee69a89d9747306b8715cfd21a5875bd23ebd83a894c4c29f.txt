@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of walking for older adults in the UK. It highlights how regular walking can improve physical health, reduce the risk of chronic conditions, boost mental well-being, and create opportunities for social connections. It emphasizes the importance of incorporating walking into daily routines to stay active, healthy, and happy, especially for those over 65 in the UK.
+age:65+
+ed:
+nat:England
+metro:
+income:$30K-$100K

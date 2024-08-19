@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:This article discusses the benefits of urban gardens in cities. It highlights how these gardens can provide fresh produce, promote community engagement, improve mental health, and contribute to a greener environment. The article emphasizes the positive impact of urban gardens on both individuals and communities, encouraging city residents to consider creating their own green spaces.
+age:35-65
+ed:Bachelor's Degree
+nat:New Zealand
+metro:Metro
+income:

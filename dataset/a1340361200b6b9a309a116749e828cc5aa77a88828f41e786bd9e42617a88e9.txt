@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses ways for rural residents with a lower income to save on their energy bills. It mentions programs that offer financial assistance for weatherizing homes and tips for cutting down energy usage in everyday activities. These measures can help individuals living in rural areas save money and make their homes more energy-efficient.
+age:35-65
+ed:
+nat:
+metro:Regional
+income:Under $30K

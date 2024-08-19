@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the importance of staying active and maintaining social connections as we get older, especially for those living in rural areas. It highlights how engaging in physical activities like gardening, walking, or joining community groups can improve overall well-being and combat loneliness. The piece emphasizes the value of investing time in hobbies, staying connected with friends and neighbors, and seeking support from local resources to enhance quality of life.
+age:65+
+ed:
+nat:England
+metro:Regional
+income:Under $30K

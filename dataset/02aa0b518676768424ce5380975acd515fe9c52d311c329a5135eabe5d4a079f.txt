@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses how rural seniors can benefit from technology as they age. It highlights how using smartphones, tablets, and computers can help older adults stay connected, access healthcare services, and enjoy entertainment. It emphasizes the importance of learning digital skills and provides resources for seniors to get started.
+age:65+
+ed:
+nat:
+metro:Regional
+income:$30K-$100K

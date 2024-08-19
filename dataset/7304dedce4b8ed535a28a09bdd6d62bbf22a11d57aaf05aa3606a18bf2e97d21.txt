@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses how rural communities in New Zealand are embracing digital technology to improve connectivity and access to services. By utilizing technology like broadband internet and mobile apps, rural residents can now access healthcare, education, and business opportunities more easily. This shift towards digital solutions is helping bridge the gap between urban and rural areas, providing more opportunities and convenience for those living in rural communities.
+age:15-35
+ed:
+nat:New Zealand
+metro:Regional
+income:

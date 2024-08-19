@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the importance of sustainable farming practices in rural Australia. It emphasizes the benefits of adopting environmentally friendly methods to improve crop yield and conserve natural resources. The article aims to educate readers about the positive impact of sustainable farming on the environment and society, encouraging farmers to consider implementing these practices.
+age:35-65
+ed:Bachelor's Degree
+nat:Australia
+metro:Regional
+income:Under $30K

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of rural living in the UK for individuals with annual incomes ranging from $30,000 to $100,000. It highlights the advantages of living in a rural area, such as lower living costs, better work-life balance, and access to nature. It emphasizes the appeal of rural living for those seeking a slower pace of life and a strong sense of community.
+age:35-65
+ed:
+nat:England
+metro:Regional
+income:$30K-$100K

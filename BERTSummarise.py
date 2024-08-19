@@ -2,17 +2,20 @@ import torch;
 from oneHotEncodeTrainingBERT import *
 from transformers import BertTokenizer
 
+model_path = 'weights/demographic_bert_weights_two.pth'
+model = DemographicBERT(demographic_size=16)  # or the correct demographic size
+model.load_state_dict(torch.load(model_path))
+model.eval()  # Set the model to evaluation mode
+model.to('cuda')
+tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+
 def bertSummarize(article, demographic_info, max_length=128):
     
     print("Article inside bertSummaraize: " + article)
-    model_path = 'weights/demographic_bert_weights_two.pth'
-    model = DemographicBERT(demographic_size=16)  # or the correct demographic size
-    model.load_state_dict(torch.load(model_path))
-    model.eval()  # Set the model to evaluation mode
-    model.to('cuda')
-    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+    
     # Tokenize the article
     
+
     input_ids = tokenizer.encode(article, return_tensors='pt', truncation=True, padding='max_length', max_length=512)
     
     # Prepare demographic tensor

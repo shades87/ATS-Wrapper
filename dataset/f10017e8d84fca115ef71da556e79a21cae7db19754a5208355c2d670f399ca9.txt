@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of retirement savings and strategies for maximizing social security benefits. It highlights tax implications and provides guidance on how to manage retirement savings efficiently. It emphasizes the importance of financial planning for a secure retirement.
+age:65+
+ed:
+nat:
+metro:
+income:$100K+

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of sustainable living in rural areas. It highlights how making small changes can help save money, reduce waste, and protect the environment. By focusing on simple practices like growing your own food, using renewable energy sources, and reducing water consumption, individuals can lead a more eco-friendly lifestyle while also improving their financial situation. These practices are especially relevant for those living in rural areas, offering practical tips for sustainable living.
+age:35-65
+ed:
+nat:England
+metro:Regional
+income:Under $30K

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of urban gardening for city dwellers in New Zealand. It highlights how gardening in the city can provide fresh produce, reduce stress, and create a sense of community. It encourages readers to consider starting their own urban garden to enjoy these advantages.
+age:35-65
+ed:
+nat:New Zealand
+metro:Metro
+income:$100K+

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of digital inclusion for older adults in the UK, particularly those living in rural areas. It highlights how technology can enhance their quality of life, increase social connections, and provide access to essential services. It mentions that technology can be intimidating for some older adults, but with the right support and guidance, it can greatly improve their daily lives.
+age:65+
+ed:
+nat:England
+metro:Regional
+income:$30K-$100K

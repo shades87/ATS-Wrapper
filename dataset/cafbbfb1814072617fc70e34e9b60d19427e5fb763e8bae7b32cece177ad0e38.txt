@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of exploring city parks for seniors. It highlights how these outdoor spaces can provide opportunities for exercise, socialization, and relaxation. It emphasizes the importance of staying active and engaged in later years and suggests city parks as a perfect setting to achieve this.
+age:65+
+ed:
+nat:
+metro:Metro
+income:

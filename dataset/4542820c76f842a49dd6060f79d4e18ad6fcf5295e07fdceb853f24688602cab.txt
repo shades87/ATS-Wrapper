@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses ways to save money and budget effectively while living in a city in Australia on a modest income. It provides practical tips for managing expenses, finding affordable housing, minimizing transportation costs, and making smart choices when it comes to groceries and entertainment. The article aims to help individuals with limited income to make the most of their finances and improve their financial well-being.
+age:35-65
+ed:
+nat:Australia
+metro:Metro
+income:Under $30K

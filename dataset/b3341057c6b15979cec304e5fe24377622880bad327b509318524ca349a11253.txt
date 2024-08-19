@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the benefits of physical activity for older adults like yourself. It emphasizes the positive impact of regular exercise on maintaining and improving your overall health and well-being. It also touches upon how incorporating physical activity into your routine can help in preventing age-related health issues. Overall, it provides valuable insights into how staying active can enhance your quality of life.
+age:65+
+ed:Bachelor's Degree
+nat:
+metro:Metro
+income:

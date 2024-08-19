@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the benefits of urban gardening in cities in the UK. It highlights how growing your own food can be a convenient and sustainable way to access fresh produce. Urban gardens not only provide a sense of community and well-being but also contribute to reducing food miles and promoting healthier eating habits. Overall, urban gardening offers city dwellers an opportunity to connect with nature and enjoy the rewards of homegrown produce.
+age:35-65
+ed:Bachelor's Degree
+nat:England
+metro:Metro
+income:

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of owning an electric car in the UK, highlighting reduced fuel costs, lower maintenance expenses, and environmental friendliness. It also mentions the government grants available for electric car purchases, making them more affordable. Overall, it aims to encourage readers to consider switching to electric cars for a more cost-effective and eco-friendly driving experience.
+age:35-65
+ed:
+nat:England
+metro:
+income:

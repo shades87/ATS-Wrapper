@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the benefits of incorporating mindfulness practices into daily life in rural New Zealand. It highlights how mindfulness can enhance mental well-being, reduce stress, and foster a greater sense of connection to nature and community. The article emphasizes the simplicity and accessibility of mindfulness techniques, making them ideal for rural residents looking to improve their overall quality of life.
+age:35-65
+ed:Bachelor's Degree
+nat:New Zealand
+metro:Regional
+income:$100K+

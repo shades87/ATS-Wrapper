@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of staying active and engaged in activities for older adults in New Zealand, especially those living in cities. It highlights the importance of social connections, physical activity, and mental stimulation for overall well-being. It emphasizes that even on a limited income of less than $30,000 a year, there are affordable and accessible ways to stay active and involved in the community.
+age:65+
+ed:
+nat:New Zealand
+metro:Metro
+income:Under $30K

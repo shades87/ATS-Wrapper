@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the importance of saving money for retirement and provides tips on how to effectively manage your finances. It emphasizes the need to start saving early and offers practical advice on setting financial goals and creating a budget. The article also highlights the benefits of investing in a pension and seeking professional financial advice. Ultimately, the message is clear: taking control of your finances now can lead to a more secure and comfortable future.
+age:35-65
+ed:
+nat:England
+metro:
+income:Under $30K

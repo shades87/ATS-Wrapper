@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of incorporating walking into one's daily routine. It highlights how regular walks can improve physical health, mental well-being, and overall quality of life. It also emphasizes the importance of finding scenic routes in a rural setting like New Zealand to make the experience more enjoyable. As someone who earns over $100,000 a year, you have the resources to invest in quality walking gear and accessories to enhance your walking experience. So, lace up your shoes, step outside, and start reaping the many benefits of walking in the beautiful New Zealand countryside!
+age:65+
+ed:
+nat:New Zealand
+metro:Regional
+income:$100K+

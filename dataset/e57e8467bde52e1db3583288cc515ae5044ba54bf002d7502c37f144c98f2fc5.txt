@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the benefits of organic farming in New Zealand, highlighting how it can improve soil health, support biodiversity, and produce healthier food. It also mentions the challenges faced by organic farmers, such as certification costs and access to markets. Overall, the article encourages readers to consider the advantages of supporting organic agriculture and its positive impact on the environment and local communities.
+age:35-65
+ed:Bachelor's Degree
+nat:New Zealand
+metro:Regional
+income:Under $30K

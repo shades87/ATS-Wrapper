@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the benefits of sustainable farming practices in rural areas of the UK. It highlights how these methods can help increase biodiversity, improve soil quality, and provide healthier food options. The piece emphasizes the importance of supporting local farmers and adopting sustainable agriculture for a more environmentally friendly and resilient food system.
+age:35-65
+ed:Bachelor's Degree
+nat:England
+metro:Regional
+income:$100K+

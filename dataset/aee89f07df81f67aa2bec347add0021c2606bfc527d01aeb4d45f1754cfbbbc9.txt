@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the importance of staying active and engaged in city life, especially for individuals over 65. It mentions the benefits of remaining connected to the community, participating in various activities, and maintaining a healthy lifestyle. It encourages individuals to make the most of their city surroundings and opportunities for social interaction and physical exercise.
+age:65+
+ed:
+nat:England
+metro:Metro
+income:$100K+

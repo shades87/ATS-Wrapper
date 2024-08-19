@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the benefits of incorporating exercise into your daily routine, such as improved mental health, increased energy levels, and better physical fitness. It emphasizes the importance of finding activities you enjoy to help you stay motivated and make exercise a regular part of your life. The article outlines various ways to fit exercise into your busy schedule, such as using lunch breaks or walking meetings to stay active. It also suggests setting realistic goals and tracking your progress to stay motivated. Overall, the article aims to inspire readers to prioritize their health and well-being through regular physical activity.
+age:35-65
+ed:Bachelor's Degree
+nat:England
+metro:
+income:$30K-$100K

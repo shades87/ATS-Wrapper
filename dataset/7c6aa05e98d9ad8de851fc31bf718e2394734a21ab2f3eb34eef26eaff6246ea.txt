@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article highlights the benefits of practicing gratitude regularly, emphasizing its positive impact on mental health, relationships, and overall well-being. It encourages incorporating gratitude into daily routines to experience increased happiness and contentment.
+age:35-65
+ed:
+nat:United States
+metro:
+income:$100K+

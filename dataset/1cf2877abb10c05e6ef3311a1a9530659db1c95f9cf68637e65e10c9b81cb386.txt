@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the importance of sustainable farming practices in New Zealand and how they can benefit the environment and rural communities. It highlights the need for farmers to adopt methods that reduce greenhouse gas emissions and protect natural resources. The article emphasizes the role of agriculture in combating climate change and ensuring long-term viability for rural areas. It provides information on various sustainable farming techniques that can help farmers make a positive impact on the environment while maintaining profitability.
+age:35-65
+ed:
+nat:New Zealand
+metro:Regional
+income:$100K+

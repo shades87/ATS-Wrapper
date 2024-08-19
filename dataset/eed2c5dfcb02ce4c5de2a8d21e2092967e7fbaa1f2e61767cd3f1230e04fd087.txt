@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the rising trend of luxury train travel in the UK. It highlights the unique experiences, premium services, and luxurious amenities offered by these train journeys, appealing to those seeking exclusive and lavish travel experiences.
+age:35-65
+ed:
+nat:England
+metro:
+income:$100K+

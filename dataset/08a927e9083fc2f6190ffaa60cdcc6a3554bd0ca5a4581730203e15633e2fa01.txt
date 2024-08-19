@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of rooftop gardens in urban areas. It explains how these gardens can improve air quality, reduce urban heat island effects, and provide a relaxing outdoor space in cities. The gardens also help in water management by absorbing rainwater and reducing runoff. Additionally, rooftop gardens can enhance biodiversity in urban environments and offer a sustainable way to grow food in cities. Overall, rooftop gardens are a great way to create green spaces in the concrete jungle and promote environmental sustainability.
+age:35-65
+ed:
+nat:United States
+metro:Metro
+income:$30K-$100K

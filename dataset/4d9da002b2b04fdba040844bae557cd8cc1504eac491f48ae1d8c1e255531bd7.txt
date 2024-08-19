@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the importance of financial planning for retirement, particularly for individuals over 65, living in rural Australia, and earning less than $30,000 a year. It emphasizes the significance of budgeting, saving, and seeking expert advice to secure a comfortable retirement. It highlights the challenges faced by individuals in rural areas and provides insights on navigating financial decisions effectively.
+age:65+
+ed:
+nat:Australia
+metro:Regional
+income:Under $30K

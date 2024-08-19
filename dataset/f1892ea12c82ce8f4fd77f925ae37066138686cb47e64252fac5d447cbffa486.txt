@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article explains the importance of incorporating regular exercise into your routine, highlighting the benefits it can have on both physical and mental well-being. It discusses how exercise can help improve cardiovascular health, boost mood, and reduce stress. The article emphasizes the importance of finding activities you enjoy to make staying active more sustainable in the long run.
+age:35-65
+ed:Bachelor's Degree
+nat:United States
+metro:
+income:

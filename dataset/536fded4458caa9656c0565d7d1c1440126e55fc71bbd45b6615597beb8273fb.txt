@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of incorporating technology into farming practices, especially for those in rural areas. It explains how utilizing drones, GPS, and other high-tech tools can increase efficiency and productivity. Additionally, it highlights how investing in such technology can lead to cost savings and improved yields for farmers.
+age:35-65
+ed:
+nat:United States
+metro:Regional
+income:$100K+

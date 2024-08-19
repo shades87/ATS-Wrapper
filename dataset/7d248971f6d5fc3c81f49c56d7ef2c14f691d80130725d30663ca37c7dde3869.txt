@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the benefits of virtual reality technology in healthcare. It highlights how VR is being used for pain management, therapy, and training medical professionals. It also mentions its potential to improve patient outcomes and reduce costs.
+age:35-65
+ed:Bachelor's Degree
+nat:Australia
+metro:Regional
+income:$100K+

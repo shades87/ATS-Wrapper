@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the potential benefits of investing in sustainable and ethical fashion. It highlights how ethical fashion can help combat issues like pollution and unfair labor practices in the industry. By choosing sustainable clothing options, consumers can contribute to a positive impact on the environment and society. This investment aligns with values of conscientious living and empowers individuals to make a difference through their purchasing decisions.
+age:35-65
+ed:Bachelor's Degree
+nat:New Zealand
+metro:Metro
+income:$100K+

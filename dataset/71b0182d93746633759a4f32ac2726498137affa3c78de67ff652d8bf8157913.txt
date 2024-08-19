@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses the benefits of living in a rural area in the UK, highlighting the tranquility, community feel, lower costs, and access to outdoor activities. It also addresses the challenges such as limited job opportunities and services. Ultimately, it suggests that rural living can offer a more peaceful and connected lifestyle, but may require some tradeoffs.
+age:15-35
+ed:
+nat:England
+metro:Regional
+income:$30K-$100K

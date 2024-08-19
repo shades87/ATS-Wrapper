@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the importance of regular health check-ups for seniors over the age of 65, especially those living in rural areas like you. It highlights the potential benefits of staying proactive about your health, even if you earn over $100,000 a year. Regular check-ups can help catch any health issues early and ensure you stay healthy and active for years to come.
+age:65+
+ed:
+nat:Australia
+metro:Regional
+income:$100K+

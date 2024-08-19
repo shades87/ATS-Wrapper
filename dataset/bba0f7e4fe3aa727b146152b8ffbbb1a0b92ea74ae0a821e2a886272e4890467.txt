@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article explains how to save money on healthcare costs in New Zealand for seniors living on a budget below $30,000 a year. Strategies include utilizing government subsidies, accessing community services, and getting prescriptions at a lower cost. By following these tips, seniors can take control of their healthcare expenses and make the most of their limited budget.
+age:65+
+ed:
+nat:New Zealand
+metro:
+income:Under $30K

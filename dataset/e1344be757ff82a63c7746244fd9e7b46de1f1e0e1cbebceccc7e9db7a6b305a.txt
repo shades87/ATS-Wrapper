@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article talks about how technology is benefiting rural seniors by providing them with access to telehealth services, online shopping, and virtual social connections. It explains how these tools can enhance their quality of life by offering convenience and connectivity. By utilizing technology, older adults in rural areas can stay connected with their loved ones, access healthcare services, and shop for essentials without having to travel long distances.
+age:65+
+ed:
+nat:
+metro:Regional
+income:

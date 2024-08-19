@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of maintaining an active lifestyle as we age, especially for seniors living in rural areas in Australia. It emphasizes the positive impact of regular physical activity on overall health and well-being. Staying active can help older adults stay independent, reduce the risk of chronic illnesses, and improve mental health. It also suggests various activities that seniors can engage in to stay active, such as walking, gardening, and joining community groups. Ultimately, staying active is essential for enjoying a fulfilling and healthy life in our golden years.
+age:65+
+ed:
+nat:Australia
+metro:Regional
+income:

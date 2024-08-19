@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the benefits of urban gardening and how it can positively impact cities. It emphasizes that gardening in urban areas can improve air quality, provide fresh produce, support wildlife, and promote community bonding. Overall, urban gardening is portrayed as a rewarding and environmentally friendly activity that can enhance city life.
+age:35-65
+ed:Bachelor's Degree
+nat:United States
+metro:Metro
+income:

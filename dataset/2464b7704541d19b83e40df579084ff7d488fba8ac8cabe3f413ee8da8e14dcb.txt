@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:This article talks about how rural businesses in the UK are becoming increasingly tech-savvy to reach more customers online. It highlights the importance of adapting to digital trends, such as creating an online presence and using social media, to grow rural businesses. It also discusses the benefits of these changes, such as expanding customer reach and increasing sales. So, if you have a rural business or are thinking of starting one, embracing technology could help you thrive in the digital age!
+age:15-35
+ed:
+nat:England
+metro:Regional
+income:

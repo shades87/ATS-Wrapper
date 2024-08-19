@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of setting up a trust for estate planning in New Zealand. It explains how trusts can protect assets and provide for your loved ones after you pass away. It also mentions the importance of seeking professional advice when considering setting up a trust to ensure it aligns with your specific needs and circumstances. Trusts can be important tools for managing and distributing assets, and understanding how they work can help you make informed decisions about your estate.
+age:65+
+ed:
+nat:New Zealand
+metro:Regional
+income:$30K-$100K

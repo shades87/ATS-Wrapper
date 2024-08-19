@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the importance of staying physically and mentally active as we get older. It emphasizes the benefits of exercise in helping to prevent falls and maintain independence. It also highlights the role of social interaction and engagement in keeping the mind sharp. Overall, the article encourages older adults to prioritize their health and well-being by staying active and connected.
+age:65+
+ed:
+nat:England
+metro:
+income:

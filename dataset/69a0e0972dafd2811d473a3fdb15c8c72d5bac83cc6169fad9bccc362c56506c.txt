@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article explores the importance of creating a balance between work and personal life for individuals in the 35-65 age range, especially those earning over $100,000 a year. It emphasizes the significance of prioritizing self-care and making time for activities that bring joy and relaxation. The article suggests strategies to help achieve this balance, such as setting boundaries at work, engaging in hobbies, and spending quality time with loved ones. It highlights the benefits of maintaining a healthy work-life balance, including improved mental well-being, increased productivity, and overall life satisfaction.
+age:35-65
+ed:
+nat:
+metro:
+income:$100K+

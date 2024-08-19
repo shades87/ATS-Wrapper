@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:New Zealanders living in cities are increasingly turning to electric bicycles as a convenient, eco-friendly mode of transportation. These e-bikes are gaining popularity for their ability to navigate urban environments efficiently while reducing carbon footprints. Riders in New Zealand appreciate the ease and versatility of e-bikes for commuting, errands, and leisure.
+age:35-65
+ed:
+nat:New Zealand
+metro:Metro
+income:

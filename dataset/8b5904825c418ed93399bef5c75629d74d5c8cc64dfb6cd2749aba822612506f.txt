@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:Learn how you can boost your financial literacy and make smarter money decisions with these simple strategies. Find out why understanding key financial concepts can help you achieve your financial goals. Discover practical tips to improve your financial knowledge and take control of your financial future. Start building a solid financial foundation today!
+age:35-65
+ed:Bachelor's Degree
+nat:New Zealand
+metro:Metro
+income:$30K-$100K

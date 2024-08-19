@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article talks about the benefits of urban living in Australia for high-earning individuals like yourself. It highlights the convenience, amenities, and opportunities available in city life, making it an appealing choice for those with a higher income.
+age:35-65
+ed:
+nat:Australia
+metro:Metro
+income:$100K+

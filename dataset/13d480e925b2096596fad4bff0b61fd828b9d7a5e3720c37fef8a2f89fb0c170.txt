@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of city living for high earners in the UK, highlighting the convenience, cultural attractions, and amenities available in urban areas. It emphasizes how living in a city can offer a vibrant lifestyle with access to top restaurants, entertainment venues, and professional opportunities. The author suggests that high earners can maximize their earnings and lifestyle choices by choosing to live in a city.
+age:35-65
+ed:
+nat:England
+metro:Metro
+income:$100K+

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses the benefits of rural living for those who earn over $100,000 a year in the UK. It highlights how living in the countryside can offer a better quality of life, lower living costs, and a greater sense of community. It also mentions the opportunities for outdoor activities, clean air, and escape from the hustle and bustle of city life. Overall, it presents rural living as an appealing option for those looking to enhance their lifestyle and well-being.
+age:15-35
+ed:
+nat:England
+metro:Regional
+income:$100K+

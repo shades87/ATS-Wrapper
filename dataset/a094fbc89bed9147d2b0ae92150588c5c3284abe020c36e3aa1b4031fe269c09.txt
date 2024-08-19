@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses how rural areas in the United States are seeing an increase in remote work opportunities due to advancements in technology. This transition allows individuals in rural areas to work for companies based in urban areas. As someone who likely enjoys the benefits of rural living while also having a strong academic background and a successful career, this shift could present new opportunities for you to maintain your current lifestyle while accessing higher-paying job opportunities.
+age:35-65
+ed:Bachelor's Degree
+nat:United States
+metro:Regional
+income:$100K+

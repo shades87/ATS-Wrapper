@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the benefits of rural living in the UK, emphasizing the peaceful and picturesque surroundings. It points out that rural areas have lower crime rates and offer a strong sense of community. It also highlights the opportunities for outdoor activities and the slower pace of life in comparison to urban areas. The article aims to show the appeal of rural living to readers in the UK, especially those between 35 and 65 years old who appreciate the charm and tranquility of countryside living.
+age:35-65
+ed:Bachelor's Degree
+nat:England
+metro:Regional
+income:

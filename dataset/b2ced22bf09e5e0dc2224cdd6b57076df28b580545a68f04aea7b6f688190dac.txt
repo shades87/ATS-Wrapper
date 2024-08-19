@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:Kiwis over 65 in New Zealand city centers should check out the article about engaging activities specifically designed for their age group. It covers a variety of topics and offers helpful tips to stay active, healthy, and connected in the local community.
+age:65+
+ed:
+nat:New Zealand
+metro:Metro
+income:

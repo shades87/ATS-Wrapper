@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the importance of incorporating sustainable practices in urban living to combat climate change and create a healthier environment for city residents. It emphasizes the role of individuals in making small changes like using public transport, reducing waste, and choosing eco-friendly products to contribute to a more sustainable future. The article highlights the benefits of these actions, such as cleaner air, less waste, and a healthier lifestyle for city dwellers. It suggests steps that individuals can take to reduce their carbon footprint and make a positive impact on the environment.
+age:35-65
+ed:
+nat:England
+metro:Metro
+income:Under $30K

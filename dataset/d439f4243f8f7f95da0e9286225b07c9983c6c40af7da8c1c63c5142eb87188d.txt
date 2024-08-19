@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses the benefits of rural living in New Zealand, highlighting the appeal of a slower pace of life, connection to nature, and sense of community. It suggests that rural living can offer a more affordable lifestyle compared to urban areas, making it an attractive option for those looking to escape the hustle and bustle of city life. Overall, the article promotes the idea of rural living as a desirable alternative for those seeking a simpler and more peaceful way of life.
+age:15-35
+ed:
+nat:New Zealand
+metro:Regional
+income:$30K-$100K

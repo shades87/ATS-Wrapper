@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article explains the benefits of using solar power in rural areas for homeowners with annual earnings of over $100,000. Solar power can provide cost savings on electricity bills and help increase energy independence. Installation of solar panels can also increase property value and contribute to environmental sustainability.
+age:35-65
+ed:
+nat:
+metro:Regional
+income:$100K+

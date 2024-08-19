@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of telemedicine for seniors living in rural areas, especially for those over 65. It highlights how virtual doctor visits can provide convenient and efficient healthcare access without the need to travel long distances. Telemedicine can save time and money, while ensuring seniors receive quality medical care from the comfort of their homes. This technology is particularly helpful for individuals in rural areas where healthcare facilities may be scarce.
+age:65+
+ed:
+nat:United States
+metro:Regional
+income:$100K+

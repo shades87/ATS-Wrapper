@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the benefits of sustainable living practices in rural areas. It highlights how implementing solar panels can reduce energy costs and the importance of conserving water. It also mentions the advantages of growing one's own food and supporting local farmers for healthier and more sustainable lifestyles.
+age:35-65
+ed:Bachelor's Degree
+nat:United States
+metro:Regional
+income:

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the benefits of urban gardening in cities like London. It highlights how city dwellers can grow their own fruits, vegetables, and herbs even in limited spaces. Urban gardening not only provides fresh produce but also promotes sustainability and a healthier lifestyle. It can be a rewarding and cost-effective way to enjoy gardening while living in a city.
+age:35-65
+ed:Bachelor's Degree
+nat:England
+metro:Metro
+income:$30K-$100K

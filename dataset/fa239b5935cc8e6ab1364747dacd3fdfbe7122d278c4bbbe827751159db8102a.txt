@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses ways for seniors with limited income in the USA to access affordable transportation options. It suggests utilizing public transport, volunteer driving programs, senior shuttle services, and ridesharing apps to help save money while getting around.
+age:65+
+ed:
+nat:United States
+metro:
+income:Under $30K

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:Discover a new way to save money in your city! Learn about a study that reveals how residents in urban areas can reduce their living costs. This information can help you make smarter financial decisions and stretch your budget even further.
+age:35-65
+ed:Bachelor's Degree
+nat:United States
+metro:Metro
+income:Under $30K

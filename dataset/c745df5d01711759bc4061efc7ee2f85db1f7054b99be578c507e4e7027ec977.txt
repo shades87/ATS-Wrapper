@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of city living for older Australians, highlighting advantages such as access to services, social activities, and public transport. It emphasizes how city life can provide convenience and opportunities for recreation and socializing.
+age:65+
+ed:
+nat:Australia
+metro:Metro
+income:$30K-$100K

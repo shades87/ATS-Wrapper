@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of urban gardening for older adults with limited income. It explains how growing your own food can save money on groceries, provide fresh produce, promote physical activity, and offer mental health benefits. The article is helpful for older adults in cities earning less than $30,000 a year who are interested in urban gardening.
+age:65+
+ed:
+nat:
+metro:Metro
+income:Under $30K

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses the benefits of utilizing smart home technology to increase convenience, security, and energy efficiency in urban residences. It highlights how these technologies can be controlled remotely via smartphone apps, offering personalized control over lighting, heating, security systems, and more. This allows for a more efficient and comfortable living environment, particularly for busy urban dwellers.
+age:15-35
+ed:
+nat:England
+metro:Metro
+income:$100K+

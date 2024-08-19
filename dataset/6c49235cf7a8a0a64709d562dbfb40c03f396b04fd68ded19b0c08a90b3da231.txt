@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the importance of sustainable farming practices in rural areas of Australia. It highlights the benefits of implementing eco-friendly farming methods to protect the environment and ensure a healthy future for agriculture. It emphasizes the role of farmers in making environmentally conscious decisions to preserve natural resources for the next generation.
+age:35-65
+ed:Bachelor's Degree
+nat:Australia
+metro:Regional
+income:

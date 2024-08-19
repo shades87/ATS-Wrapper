@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses how financial stress can affect our mental health and offers strategies to manage money worries effectively. It highlights the importance of seeking support and taking proactive steps to improve financial well-being.
+age:35-65
+ed:
+nat:Australia
+metro:
+income:$30K-$100K

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of budgeting for people living in cities in New Zealand who earn less than $30,000 a year. It emphasizes the importance of managing finances, setting financial goals, and tracking expenses to improve financial stability. By budgeting effectively, individuals can prioritize spending and save for future needs.
+age:35-65
+ed:
+nat:New Zealand
+metro:Metro
+income:Under $30K

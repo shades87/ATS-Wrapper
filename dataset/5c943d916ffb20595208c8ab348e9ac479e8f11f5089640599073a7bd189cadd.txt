@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of exercise for older adults, emphasizing how physical activity can improve overall health and well-being. It is important to stay active, particularly as we age, to maintain independence and quality of life. Regular exercise can help prevent chronic conditions, improve mood, and boost energy levels. As an older adult in Australia living in a city and earning less than $30,000 a year, incorporating exercise into your routine can be a cost-effective way to stay healthy and active.
+age:65+
+ed:
+nat:Australia
+metro:Metro
+income:Under $30K

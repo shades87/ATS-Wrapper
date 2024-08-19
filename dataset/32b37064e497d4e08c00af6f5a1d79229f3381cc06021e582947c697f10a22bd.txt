@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of sustainable living in rural Australia. It highlights how making small changes in our daily lives, such as reducing energy consumption and waste, can have a positive impact on the environment and our wallets. It suggests simple ways to live more sustainably, like growing your own food and using renewable energy sources. Overall, the article encourages readers to consider adopting sustainable practices in their rural lifestyle for a greener and more cost-effective future.
+age:35-65
+ed:
+nat:Australia
+metro:Regional
+income:$30K-$100K

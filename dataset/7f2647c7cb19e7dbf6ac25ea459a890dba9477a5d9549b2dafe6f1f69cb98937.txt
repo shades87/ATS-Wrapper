@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses the importance of urban trees in cities for improving air quality, reducing heat, and enhancing overall well-being. It highlights how trees in urban areas can positively impact residents by providing shade, lowering energy costs, and creating a healthier environment. It suggests that investing in urban tree planting and maintenance can make cities more livable and enjoyable for everyone.
+age:15-35
+ed:
+nat:United States
+metro:Metro
+income:$30K-$100K

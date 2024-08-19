@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:Vaccines are a safe and effective way for older adults, like you, to protect against respiratory infections. These vaccines can help prevent serious complications and hospitalizations. It's important to stay up-to-date on your vaccinations to maintain your health and well-being.
+age:65+
+ed:Bachelor's Degree
+nat:
+metro:
+income:$30K-$100K

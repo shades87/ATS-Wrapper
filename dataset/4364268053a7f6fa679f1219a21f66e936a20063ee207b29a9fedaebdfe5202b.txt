@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of solar power in rural areas of New Zealand. It explains how solar panels can provide clean and sustainable energy while reducing electricity bills. It highlights the advantages of solar power, such as being environmentally friendly and cost-effective in the long run. The article also mentions government incentives that make switching to solar power more affordable.
+age:35-65
+ed:
+nat:New Zealand
+metro:Regional
+income:

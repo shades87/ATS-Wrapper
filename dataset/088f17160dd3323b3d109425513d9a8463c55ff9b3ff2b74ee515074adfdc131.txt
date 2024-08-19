@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the importance of staying active and social for seniors in urban areas to maintain their physical and mental well-being. It suggests participating in group activities, visiting local attractions, and utilizing public transportation to stay engaged and connected in the community. It emphasizes the benefits of socializing and staying active for overall health and happiness in later years.
+age:65+
+ed:Bachelor's Degree
+nat:
+metro:Metro
+income:$100K+

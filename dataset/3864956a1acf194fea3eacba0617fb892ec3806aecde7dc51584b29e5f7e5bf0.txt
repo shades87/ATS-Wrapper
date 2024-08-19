@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of staying active and engaged in city life for older Australians who earn over $100,000 a year. It highlights the importance of social connections, physical activities, and mental stimulation in maintaining a fulfilling and healthy lifestyle. It suggests getting involved in community groups, trying new activities, and staying connected with friends and family to make the most of city living.
+age:65+
+ed:
+nat:Australia
+metro:Metro
+income:$100K+

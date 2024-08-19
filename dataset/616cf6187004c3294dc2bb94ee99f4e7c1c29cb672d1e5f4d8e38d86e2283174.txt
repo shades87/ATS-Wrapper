@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the benefits of mindfulness practices in improving mental well-being. It explains how daily mindfulness exercises can reduce stress, boost happiness, and enhance focus, making it easier to handle life's challenges. The article also highlights how incorporating mindfulness into daily routines can lead to a more balanced, peaceful life.
+age:35-65
+ed:Bachelor's Degree
+nat:New Zealand
+metro:Metro
+income:Under $30K

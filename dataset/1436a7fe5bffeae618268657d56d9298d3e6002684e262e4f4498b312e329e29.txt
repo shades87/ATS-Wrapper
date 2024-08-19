@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of staying active and engaging in regular exercise for older adults in New Zealand. It emphasizes the importance of physical activity in maintaining overall health and well-being, especially as one ages. The article encourages seniors to participate in various activities like walking, swimming, or tai chi to stay fit and healthy. It also suggests seeking out community programs or local resources that cater to older individuals looking to stay active.
+age:65+
+ed:
+nat:New Zealand
+metro:Metro
+income:$30K-$100K

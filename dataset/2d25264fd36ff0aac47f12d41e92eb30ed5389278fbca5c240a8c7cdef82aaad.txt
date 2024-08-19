@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses the benefits of establishing a personal garden in rural areas. It highlights how gardening can help save money on groceries, improve mental well-being, and promote a healthier lifestyle. It also provides tips on how to start a garden and make the most of limited resources.
+age:15-35
+ed:
+nat:United States
+metro:Regional
+income:Under $30K

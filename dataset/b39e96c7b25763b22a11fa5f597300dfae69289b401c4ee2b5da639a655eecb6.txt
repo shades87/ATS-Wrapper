@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses the importance of staying active as we age, highlighting how regular exercise can improve overall health, boost mood, and increase longevity. It emphasizes that even simple activities like walking or gardening can have significant benefits. The article aims to inspire older adults to prioritize physical activity for their well-being, suggesting that staying active can lead to a more enjoyable and fulfilling life.
+age:65+
+ed:Bachelor's Degree
+nat:
+metro:
+income:Under $30K

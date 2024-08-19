@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits of incorporating mindfulness practices into our daily routines. It explains how mindfulness can reduce stress, improve focus, and enhance overall well-being. By incorporating simple mindfulness exercises into our day, we can experience these benefits and lead a more balanced and fulfilling life.
+age:35-65
+ed:
+nat:United States
+metro:
+income:

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of joining a seniors' club in New Zealand for those over 65. It highlights the various activities, social events, and support networks available for members. Joining a club can provide a sense of belonging, opportunities to make new friends, and engage in activities that promote overall well-being and happiness among the elderly.
+age:65+
+ed:
+nat:New Zealand
+metro:
+income:$30K-$100K

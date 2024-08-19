@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses the benefits of urban gardening, highlighting how individuals in cities can grow their own food even with limited space. It emphasizes the positive impact of urban gardening on health, the environment, and community connections. It showcases how easy it is to start with small steps like planting herbs or vegetables in pots on balconies or windowsills. The article inspires readers to try urban gardening as a sustainable and rewarding activity that can enhance their city living experience.
+age:15-35
+ed:
+nat:New Zealand
+metro:Metro
+income:$30K-$100K

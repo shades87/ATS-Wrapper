@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses the benefits of green spaces in rural areas, emphasizing how they can improve mental health, provide opportunities for physical activity, and create a sense of community. The article highlights the importance of parks, gardens, and natural landscapes in rural settings for overall well-being. It stresses the positive impact of spending time in nature for people living in rural communities.
+age:35-65
+ed:
+nat:
+metro:Regional
+income:

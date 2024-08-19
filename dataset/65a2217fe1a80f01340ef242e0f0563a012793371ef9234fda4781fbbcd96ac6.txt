@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article discusses the impact of climate change in New Zealand and highlights the importance of taking action to combat it. It emphasizes the need for individuals to reduce their carbon footprint and support sustainable practices to protect the environment for future generations. It calls on readers to join the fight against climate change and make a difference in their community.
+age:15-35
+ed:
+nat:New Zealand
+metro:Metro
+income:$100K+

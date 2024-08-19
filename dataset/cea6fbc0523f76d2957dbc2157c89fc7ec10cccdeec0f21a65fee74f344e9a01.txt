@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the importance of budgeting for individuals with low income in the United States. It emphasizes the impact of budgeting on financial stability and offers practical tips on creating a budget that works for those earning less than $30,000 a year. It encourages readers to take control of their finances by tracking expenses, prioritizing needs over wants, and finding ways to save money. The article aims to empower readers to make informed financial decisions despite their limited income.
+age:35-65
+ed:
+nat:United States
+metro:
+income:Under $30K

@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses the benefits and importance of rural communities in Australia. It highlights how these areas contribute to the country's economy and culture despite being often overlooked. It emphasizes the need to support and invest in rural areas to ensure their sustainability and growth.
+age:35-65
+ed:
+nat:Australia
+metro:Regional
+income:Under $30K

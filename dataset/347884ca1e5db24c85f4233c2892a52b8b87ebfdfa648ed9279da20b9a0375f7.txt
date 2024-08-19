@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/ukraine-military-incursion-into-russia-maps-satellite-images/104233912
+article:
+summary:The article explores how social media influencers impact consumer behavior through various marketing strategies. It discusses how influencers can influence their followers' purchasing decisions and highlights the importance of authenticity in influencer marketing. The article also touches upon the rise of micro-influencers and the potential benefits they offer to brands.
+age:15-35
+ed:
+nat:United States
+metro:
+income:

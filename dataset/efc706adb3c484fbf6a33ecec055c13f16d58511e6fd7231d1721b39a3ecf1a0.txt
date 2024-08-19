@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses how older adults in the United States are increasingly turning to online dating to find companionship. This trend is driven by the convenience and ease of meeting new people through dating apps and websites. The article also highlights the importance of staying safe while dating online and offers tips on how to navigate the digital dating world.
+age:65+
+ed:
+nat:United States
+metro:
+income:

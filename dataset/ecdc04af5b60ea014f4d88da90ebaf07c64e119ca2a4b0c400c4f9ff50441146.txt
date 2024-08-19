@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the importance of maintaining an active lifestyle in older age to prevent cognitive decline. It highlights the benefits of regular exercise, social engagement, and a healthy diet in maintaining brain health. It also suggests ways to incorporate these habits into daily life, such as joining community groups or taking up a new hobby. The article emphasizes the connection between physical health and mental acuity, encouraging readers to prioritize their overall well-being as they age.
+age:65+
+ed:
+nat:England
+metro:Regional
+income:$100K+

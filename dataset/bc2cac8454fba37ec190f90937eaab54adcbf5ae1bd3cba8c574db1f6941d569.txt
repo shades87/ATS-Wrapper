@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-17/is-it-ok-to-lie-to-someone-with-dementia/104222410
+article:
+summary:The article discusses the benefits of senior living communities for older adults in the United States who earn less than $30,000 a year and reside in a city. These communities offer various amenities and services tailored to the needs of seniors, providing a comfortable and engaging environment for them to socialize, stay active, and receive assistance as needed. Consider exploring senior living options in your city to enhance your quality of life and well-being during your golden years.
+age:65+
+ed:
+nat:United States
+metro:Metro
+income:Under $30K

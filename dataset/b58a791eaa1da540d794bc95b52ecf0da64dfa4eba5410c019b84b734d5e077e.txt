@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article explains how older adults in rural areas with lower incomes face challenges in accessing healthcare due to limited resources. It highlights the importance of addressing these disparities to ensure everyone can receive the healthcare they need.
+age:65+
+ed:
+nat:
+metro:Regional
+income:Under $30K

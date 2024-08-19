@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-16/david-crisafulli-paid-200000-settling-claims-from-liquidators/104229440
+article:
+summary:The article discusses how being physically active can improve overall health and quality of life in older adults. It emphasizes the importance of staying active as we age, for maintaining strength, flexibility, and mental well-being. It also highlights various activities like walking, swimming, and tai chi that can be beneficial for older individuals. Being active not only improves physical health but also boosts mood and cognitive abilities, promoting a better quality of life in older age.
+age:65+
+ed:
+nat:
+metro:
+income:

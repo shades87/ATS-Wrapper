@@ -1,0 +1,8 @@
+url:https://www.abc.net.au/news/2024-08-15/broome-program-escooters-kids-back-school/104214084
+article:
+summary:The article discusses how rural New Zealanders can benefit from upgrading to ultra-fast broadband, which offers faster internet speeds for activities like streaming, working from home, and online shopping. It also highlights the government subsidy available to help cover the cost of installation. Upgrading to ultra-fast broadband can greatly improve connectivity and enhance your online experience, making it easier to connect with the world even from a rural area in New Zealand.
+age:35-65
+ed:Bachelor's Degree
+nat:New Zealand
+metro:Regional
+income:$30K-$100K
