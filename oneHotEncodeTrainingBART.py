@@ -1,13 +1,12 @@
 from dataset import *
 import pandas as pd
-from transformers import BertTokenizer
+from transformers import BartForConditionalGeneration, BartTokenizer
 
 import torch
 from torch.utils.data import Dataset
 from torch.utils.data import DataLoader
 
 import torch.nn as nn
-from transformers import BertModel
 
 import torch.optim as optim
 
@@ -38,7 +37,7 @@ one_hot_encoded_demographics = pd.get_dummies(df[demographic_fields], drop_first
 df = pd.concat([df, one_hot_encoded_demographics], axis=1)
 df = df.drop(columns=demographic_fields)
 
-tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+tokenizer = BartTokenizer.from_pretrained('facebook/bart-large-cnn')
 
 #print(df.shape)
 #print(df.columns)
@@ -148,14 +147,14 @@ def train():
         print(f"Epoch {epoch + 1}, Loss: {total_loss / len(dataloader)}")
 
 start_time = time.time()
-#train()
+train()
 end_time = time.time()
 
 # Total time taken
 total_time = end_time - start_time
 print(f"Total training time: {total_time:.2f} seconds")
 # Save the model weights
-#torch.save(model.state_dict(), 'weights/demographic_bert_weights_three.pth')
+torch.save(model.state_dict(), 'weights/demographic_bert_weights_three.pth')
 
 # Load the model weights
 #model.load_state_dict(torch.load('weights/demographic_bert_weights_two.pth'))
