@@ -21,7 +21,7 @@ def data():
     #]
 
     #For ever file in the dataset directory read and parse the .txt file and add it to the data object
-    import os, glob
+    
     path = 'dataset/'
     for filename in glob.glob(os.path.join(path, '*.txt')):
         with open(os.path.join(os.getcwd(), filename), 'r') as f: # open in readonly mode
@@ -427,3 +427,74 @@ def create_data_auto_grab_article():
     print(f"Total training time: {timedif:.2f} seconds")
 
 #create_data_auto_grab_article()
+def loadForBART():
+    path = 'dataset/'
+    
+    articles = []
+    summaries = []
+    demos = []
+
+    for filename in glob.glob(os.path.join(path, '*.txt')):
+        with open(os.path.join(os.getcwd(), filename), 'r',  encoding="utf-8") as f: # open in readonly mode
+            # do your stuff
+            lines = f.readlines()
+            url = ""
+            article = ""
+            summary = ""
+            age = ""
+            ed = ""
+            nat = ""
+            metro = ""
+            income = ""
+            articleDemo = ""
+
+            for line in lines:
+                line = line.rstrip()
+                print(line)
+                split = line.split(":") 
+                print(split)
+                match split[0]:
+                    case "url":
+                        url = split[1]
+
+                    case "article":
+                        article = split[1]
+
+                    case "summary":
+                        summary = split[1]
+                    
+                    case "age":
+                        age = split[1]
+                        if age:
+                            articleDemo += "age_" + age
+                            print(articleDemo)
+
+                    case "ed":
+                        ed = split[1]
+                        if ed:
+                            articleDemo += "ed_" + ed
+                            print(ed)
+
+                    case "nat":
+                        nat = split[1]
+                        if nat:
+                            articleDemo += "nat_" + nat
+
+                    case "metro":
+                        metro = split[1]
+                        if metro:
+                            articleDemo += "metro_" + metro
+                    
+                    case "income":
+                        income = split[1]
+                        if income:
+                            articleDemo += 'income_' + income
+                
+                f.close()
+            
+            if((article) and (summary)):
+                articles.append(article)
+                summaries.append(summary)
+                demos.append(articleDemo)
+
+    return {"articles": articles, "summaries": summaries, "demographics": demos}
