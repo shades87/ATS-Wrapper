@@ -11,7 +11,10 @@ from transformers import BertModel
 
 import torch.optim as optim
 
+from torch.utils.data import TensorDataset
+
 import time
+import numpy as np
 
 #BERT Model written with the assistance of chatGPT 4o
 
@@ -109,7 +112,7 @@ optimizer = optim.Adam(model.parameters(), lr=5e-5)
 #print(torch.cuda.get_device_name(0))  # Prints the name of the device
 
 def train():
-    for epoch in range(15):
+    for epoch in range(1):
         model.train()
         total_loss = 0
         for batch in dataloader:
@@ -147,8 +150,55 @@ def train():
 
         print(f"Epoch {epoch + 1}, Loss: {total_loss / len(dataloader)}")
 
+def train_CNN_Dataset():
+    cnn_train = pd.read_csv("CNN_Dataset/train.csv")
+    articles = cnn_train["article"].tolist()
+    summaries = cnn_train["highlights"].tolist()
+
+    inputs = tokenizer(articles, max_length=512, padding=True, truncation=True, return_tensors="pt")
+    targets = tokenizer(summaries, max_length=512, padding=True, truncation=True, return_tensors="pt")
+
+    input_ids = inputs['input_ids']
+    attention_mask = inputs['attention_mask']
+    summary_ids = targets['input_ids']
+
+    one_hot = np.zeros((16, 287113))
+    print(cnn_train.shape)
+    train_dataset = TensorDataset(input_ids, attention_mask, demographics, summary_ids)
+    train_dataloader = DataLoader(train_dataset, batch_size=2, shuffle=True)
+
+    for epoch in range(1):
+        model.train()
+        total_loss = 0
+        for batch in train_dataloader:
+            input_ids, attention_mask, demographics, summary_ids = batch
+            input_ids = input_ids.to('cuda')
+            attention_mask = attention_mask.to('cuda')
+            demographics = demographics.to('cuda')
+            summary_ids = summary_ids.to('cuda')
+            
+            optimizer.zero_grad()
+            outputs = model(input_ids=input_ids, attention_mask=attention_mask, demographics=demographics)
+            
+            # Reshape outputs and summary_ids for calculating loss
+            outputs = outputs.view(-1, outputs.size(-1))
+            summary_ids = summary_ids.view(-1)
+            
+            loss = criterion(outputs, summary_ids)
+            loss.backward()
+            optimizer.step()
+            
+            total_loss += loss.item()
+        
+        avg_train_loss = total_loss / len(train_dataloader)
+        print(f'Epoch [{epoch + 1}/{1}], Loss: {avg_train_loss:.4f}')
+        torch.save(model.state_dict(), 'weights/CNN_weights.pth')
+
+
+
 start_time = time.time()
 #train()
+train_CNN_Dataset()
 end_time = time.time()
 
 # Total time taken

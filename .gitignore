@@ -6,3 +6,4 @@ weights/
 node_modules/
 weights/demographic_bert_weights.pth
 weights/*
+CNN_Dataset/
