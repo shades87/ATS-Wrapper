@@ -164,21 +164,21 @@ def train_CNN_Dataset():
 
     one_hot = np.zeros((16, 287113))
     print(cnn_train.shape)
-    train_dataset = TensorDataset(input_ids, attention_mask, demographics, summary_ids)
+    train_dataset = TensorDataset(input_ids, attention_mask, one_hot, summary_ids)
     train_dataloader = DataLoader(train_dataset, batch_size=2, shuffle=True)
 
     for epoch in range(1):
         model.train()
         total_loss = 0
         for batch in train_dataloader:
-            input_ids, attention_mask, demographics, summary_ids = batch
+            input_ids, attention_mask, one_hot, summary_ids = batch
             input_ids = input_ids.to('cuda')
             attention_mask = attention_mask.to('cuda')
-            demographics = demographics.to('cuda')
+            one_hot = one_hot.to('cuda')
             summary_ids = summary_ids.to('cuda')
             
             optimizer.zero_grad()
-            outputs = model(input_ids=input_ids, attention_mask=attention_mask, demographics=demographics)
+            outputs = model(input_ids=input_ids, attention_mask=attention_mask, demographics=one_hot)
             
             # Reshape outputs and summary_ids for calculating loss
             outputs = outputs.view(-1, outputs.size(-1))
