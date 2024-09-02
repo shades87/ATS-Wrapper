@@ -111,15 +111,26 @@ optimizer = optim.Adam(model.parameters(), lr=5e-5)
 #print(torch.cuda.current_device())  # Prints the current device index
 #print(torch.cuda.get_device_name(0))  # Prints the name of the device
 
+cnn_train = pd.read_csv("CNN_Dataset/train.csv")
+
+
+
 def train():
     for epoch in range(1):
         model.train()
         total_loss = 0
         for batch in dataloader:
-            input_ids = batch['input_ids'].to("cuda")
-            summary_ids = batch['summary_ids'].to("cuda")
-            demographics = batch['demographics'].to("cuda")
+            #input_ids = batch['input_ids'].to("cuda")
+            #summary_ids = batch['summary_ids'].to("cuda")
+            #demographics = batch['demographics'].to("cuda")
             
+            input_ids = cnn_train['article'].tolist()
+            input_ids = input_ids.to("cuda")
+            summary_ids = cnn_train['highlights'].tolist()
+            summary_ids = summary_ids.to("cuda")
+            demographics = np.zeros((16, 287113))
+            demographics = demographics.to("cuda")
+
             optimizer.zero_grad()
             outputs = model(input_ids, demographics)
 
@@ -198,7 +209,7 @@ def train_CNN_Dataset():
 
 start_time = time.time()
 #train()
-train_CNN_Dataset()
+train()
 end_time = time.time()
 
 # Total time taken
