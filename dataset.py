@@ -1,6 +1,7 @@
-import sys
+import pandas as pd
 import os, glob
 import time
+from sklearn.model_selection import train_test_split
 
 from newspaper import Article 
 from newspaper import Config
@@ -10,6 +11,8 @@ from hashFunctions import *
 #Functions to create and load the dataset
 #I intend to use synthetic data to train the BERT model
 from GPTSummarise import demographics
+
+
 
 #Load the data in the .txt files in /dataset 
 def data():
@@ -498,3 +501,4 @@ def loadForBART():
                 demos.append(articleDemo)
 
     return {"articles": articles, "summaries": summaries, "demographics": demos}
+

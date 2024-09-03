@@ -15,6 +15,8 @@ from torch.utils.data import TensorDataset
 
 import time
 import numpy as np
+from CNN_Dataset import create_dataloader
+
 
 #BERT Model written with the assistance of chatGPT 4o
 
@@ -101,7 +103,12 @@ class DemographicBERT(nn.Module):
     
 
 model = DemographicBERT(demographic_size=16).to("cuda")
-criterion = nn.NLLLoss()
+
+#swap depending on initial training on dataset or finetuning
+#criterion = nn.NLLLoss() #fine tune
+criterion = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_token_id) #CNN Dataset
+
+
 optimizer = optim.Adam(model.parameters(), lr=5e-5)
 
 
@@ -111,8 +118,9 @@ optimizer = optim.Adam(model.parameters(), lr=5e-5)
 #print(torch.cuda.current_device())  # Prints the current device index
 #print(torch.cuda.get_device_name(0))  # Prints the name of the device
 
-cnn_train = pd.read_csv("CNN_Dataset/train.csv")
-
+# This trains the model on CNN Dataset, comment out to fine tune
+input_ids, attention_mask, demographics, summary_ids = torch.load('data_tensor.pt')
+dataloader = create_dataloader(input_ids, attention_mask, demographics, summary_ids)
 
 
 def train():
@@ -120,16 +128,16 @@ def train():
         model.train()
         total_loss = 0
         for batch in dataloader:
+            #for fine tuning
             #input_ids = batch['input_ids'].to("cuda")
             #summary_ids = batch['summary_ids'].to("cuda")
             #demographics = batch['demographics'].to("cuda")
             
-            input_ids = cnn_train['article'].tolist()
-            input_ids = input_ids.to("cuda")
-            summary_ids = cnn_train['highlights'].tolist()
-            summary_ids = summary_ids.to("cuda")
-            demographics = np.zeros((16, 287113))
-            demographics = demographics.to("cuda")
+            #for initial train on CNN Dataset
+            input_ids = batch[0].to("cuda")
+            attention_mask = batch[1].to("cuda")
+            demographics = batch[2].to("cuda")
+            summary_ids = batch[3].to("cuda")
 
             optimizer.zero_grad()
             outputs = model(input_ids, demographics)
@@ -160,51 +168,6 @@ def train():
             total_loss += loss.item()
 
         print(f"Epoch {epoch + 1}, Loss: {total_loss / len(dataloader)}")
-
-def train_CNN_Dataset():
-    cnn_train = pd.read_csv("CNN_Dataset/train.csv")
-    articles = cnn_train["article"].tolist()
-    summaries = cnn_train["highlights"].tolist()
-
-    inputs = tokenizer(articles, max_length=512, padding=True, truncation=True, return_tensors="pt")
-    targets = tokenizer(summaries, max_length=512, padding=True, truncation=True, return_tensors="pt")
-
-    input_ids = inputs['input_ids']
-    attention_mask = inputs['attention_mask']
-    summary_ids = targets['input_ids']
-
-    one_hot = np.zeros((16, 287113))
-    print(cnn_train.shape)
-    train_dataset = TensorDataset(input_ids, attention_mask, one_hot, summary_ids)
-    train_dataloader = DataLoader(train_dataset, batch_size=2, shuffle=True)
-
-    for epoch in range(1):
-        model.train()
-        total_loss = 0
-        for batch in train_dataloader:
-            input_ids, attention_mask, one_hot, summary_ids = batch
-            input_ids = input_ids.to('cuda')
-            attention_mask = attention_mask.to('cuda')
-            one_hot = one_hot.to('cuda')
-            summary_ids = summary_ids.to('cuda')
-            
-            optimizer.zero_grad()
-            outputs = model(input_ids=input_ids, attention_mask=attention_mask, demographics=one_hot)
-            
-            # Reshape outputs and summary_ids for calculating loss
-            outputs = outputs.view(-1, outputs.size(-1))
-            summary_ids = summary_ids.view(-1)
-            
-            loss = criterion(outputs, summary_ids)
-            loss.backward()
-            optimizer.step()
-            
-            total_loss += loss.item()
-        
-        avg_train_loss = total_loss / len(train_dataloader)
-        print(f'Epoch [{epoch + 1}/{1}], Loss: {avg_train_loss:.4f}')
-        torch.save(model.state_dict(), 'weights/CNN_weights.pth')
-
 
 
 start_time = time.time()
