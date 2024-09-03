@@ -15,7 +15,7 @@ from torch.utils.data import TensorDataset
 
 import time
 import numpy as np
-from CNN_Dataset import create_dataloader
+from CNNDataset import create_dataloader
 
 
 #BERT Model written with the assistance of chatGPT 4o
@@ -119,7 +119,8 @@ optimizer = optim.Adam(model.parameters(), lr=5e-5)
 #print(torch.cuda.get_device_name(0))  # Prints the name of the device
 
 # This trains the model on CNN Dataset, comment out to fine tune
-input_ids, attention_mask, demographics, summary_ids = torch.load('data_tensor.pt')
+abPath = os.path.abspath('data_tensors.pt')
+input_ids, attention_mask, demographics, summary_ids = torch.load(abPath)
 dataloader = create_dataloader(input_ids, attention_mask, demographics, summary_ids)
 
 
@@ -135,7 +136,7 @@ def train():
             
             #for initial train on CNN Dataset
             input_ids = batch[0].to("cuda")
-            attention_mask = batch[1].to("cuda")
+            #attention_mask = batch[1].to("cuda")
             demographics = batch[2].to("cuda")
             summary_ids = batch[3].to("cuda")
 
@@ -179,7 +180,7 @@ end_time = time.time()
 total_time = end_time - start_time
 print(f"Total training time: {total_time:.2f} seconds")
 # Save the model weights
-#torch.save(model.state_dict(), 'weights/demographic_bert_weights_three.pth')
+torch.save(model.state_dict(), 'weights/CNN.pth')
 
 # Load the model weights
 #model.load_state_dict(torch.load('weights/demographic_bert_weights_two.pth'))
