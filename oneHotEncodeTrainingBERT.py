@@ -169,6 +169,7 @@ def train():
             total_loss += loss.item()
 
         print(f"Epoch {epoch + 1}, Loss: {total_loss / len(dataloader)}")
+        torch.save(model.state_dict(), 'weights/CNN' + str(epoch) + ".pt")
 
 
 start_time = time.time()
