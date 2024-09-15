@@ -1,0 +1,8 @@
+url:https://www.news.com.au/lifestyle/food/eat/7eleven-expands-fan-favourite-item-to-two-more-states/news-story/78e88a7a043ca917302c2927621b23e8
+article:
+summary:The article discusses the benefits of incorporating mindfulness practices into your daily routine to reduce stress and improve mental well-being. It explains how mindfulness can be easily integrated into daily activities like walking or cooking, making it accessible for people living in rural areas. The article emphasizes how mindfulness can help individuals earn higher income and improve job satisfaction. It suggests that even small moments of mindfulness throughout the day can lead to significant improvements in overall happiness and quality of life.
+age:35-65
+ed:High School
+nat:United States
+metro:Regional
+income:$30K-$100K

@@ -1,0 +1,8 @@
+url:https://www.afr.com/technology/what-is-crowdstrike-the-it-giant-behind-the-global-meltdown-20240719-p5jv4j
+article:On Friday, flights were cancelled, broadcasters went off air, trains didn’t run and medical procedures were delayed around the world.Frustrated workers were confronted with blue computer screens and no obvious way to get back online.
+summary:Last Friday, people faced widespread disruptions due to computer outages, causing flight cancellations, broadcast interruptions, train stoppages, and medical procedure delays globally. This left many workers feeling helpless with their screens turning blue and uncertain on how to reconnect online.
+age:65+
+ed:
+nat:New Zealand
+metro:Regional
+income:Under $30K
