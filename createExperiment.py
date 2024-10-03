@@ -1,17 +1,23 @@
 #import
-import sys
+import os
 from openai import OpenAI #Chat GPT 3.5
-
+from transformers import BartTokenizer, BartForConditionalGeneration, AdamW
+import torch
 
 #declare test number
-test = "one"
+test = "six"
 
 #declare demographics
-age = 0
-ed = 0
-income = 0
-metro = 0
-nat = 0
+##Record the participants and the order they participated
+##Laluune one ## Jess two ## Sheddy three ## Jayne 4 ## Deb 5
+##Leo 6 ##Rory 7 ## Jones 8
+age = 2
+ed = 1
+income = 1
+metro = 1
+nat = 1
+
+
 
 
 def demographics(age=0, ed=0, income=0, region=0, country=0):
@@ -130,27 +136,68 @@ def demographicsBART(age=0, ed=0, income=0, region=0, country=0):
             
         case 3:  
             demo = demo + "income_over_$100k"
+    return demo
 
 demoChatGPT = demographics(age, ed, income, metro, nat)
 
-demoBart = demographicsBART(age=0, ed=0, income=0, region=0, country=0)
+demoBart = demographicsBART(age, ed, income, metro, nat)
 
 
 #load BART model and weights
 
 #GPT cummarise
 def summarise(demo, cont):
-  client = OpenAI()
-  completion = client.chat.completions.create(
+    client = OpenAI()
+    completion = client.chat.completions.create(
     model="gpt-3.5-turbo",
     messages=[
       {"role": "system", "content": demo},
       {"role": "user", "content": cont}
     ]
   )
+    a = completion.choices[0].message.content
+    return a
 
-#generate 10 BART summaries and save them
+model_name = "facebook/bart-large-cnn"
+tokenizer = BartTokenizer.from_pretrained(model_name)
+model = BartForConditionalGeneration.from_pretrained(model_name)
+device = 'cuda'
+
+def summarizeBART(article, demographics):
+    weights = os.path.abspath("weights/BART")
+    model = BartForConditionalGeneration.from_pretrained('weights/BART', local_files_only=True)
+    model.to(device)
+    combined_input = demographics + " " + article
+    inputs = tokenizer(combined_input, max_length = 1024, return_tensors="pt", truncation=True).to(device)
+    
+    with torch.no_grad():
+        summary_ids = model.generate(inputs["input_ids"], attention_mask=inputs["attention_mask"], max_length=150, num_beams=4, early_stopping=True)
+    
+    summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
+    return summary
 
 #generate 10 GPT summaries and save them
+f = open("Experiment/one.txt", 'r')
+p = open("Experiment/"+test+"/chatgpt.txt", "w")
+for x in range(10):
+    string = f.readline()
+    print(string)
+    summary = summarise(string, demoChatGPT)
+    p.write(summary + '\n')
+    print(summary)
 
-for x in range()
+f.close()
+p.close()
+#generate 10 BART summaries and save them
+#open file
+f = open("Experiment/two.txt", "r")
+p = open("Experiment/"+test+"/two.txt", "w")
+for x in range(10):
+   string = f.readline()
+   summary = summarizeBART(string, demoBart)
+   p.write(summary + "\n")
+   print(summary)
+
+
+f.close()
+p.close()

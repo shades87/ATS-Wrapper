@@ -37,18 +37,18 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 
 # Articles
-data = loadForBART();
+data = loadForBARTTwo();
 articles = data.get("articles")
 summaries = data.get("summaries")
 demographics = data.get("demographics")
 
 # Prepare dataset and dataloader
 dataset = SummarizationDataset(articles, summaries, demographics, tokenizer)
-dataloader = DataLoader(dataset, batch_size=2, shuffle=True)
+dataloader = DataLoader(dataset, batch_size=4, shuffle=True)
 
 # Fine-tuning settings
 optimizer = AdamW(model.parameters(), lr=5e-5)
-num_epochs = 3
+num_epochs = 10
 
 # Fine-tuning loop
 model.train()
@@ -71,11 +71,12 @@ def trainBART():
 
         avg_epoch_loss = epoch_loss / len(dataloader)
         print(f"Epoch {epoch+1} finished with loss: {avg_epoch_loss:.4f}")
+        model.save_pretrained('weights/BART'+str(epoch))
 
 # Save fine-tuned model
-# model_save_path = "weights/fine_tuned_bart.pt"
-# torch.save(model.state_dict(), model_save_path)
-# print(f"Model saved to {model_save_path}")
+trainBART()
+
+#print(f"Model saved to {model_save_path}")
 
 # Example usage after fine-tuning
 model.eval()
@@ -97,9 +98,9 @@ model.eval()
 #print("Generated Summary:", summary)
 
 def summarizeBART(article, demographics):
-    model = BartForConditionalGeneration.from_pretrained('weights/fine_tuned_bart.pt')
+    model = BartForConditionalGeneration.from_pretrained('weights/BARTTwo/')
     combined_input = demographics + " " + article
-    inputs = tokenizer(combined_input, max_length = 1024, return_ttensors="pt", truncation=True).to(device)
+    inputs = tokenizer(combined_input, max_length = 1024, return_tensors="pt", truncation=True).to(device)
     
     with torch.no_grad():
         summary_ids = model.generate(inputs["input_ids"], attention_mask=inputs["attention_mask"], max_length=150, num_beams=4, early_stopping=True)

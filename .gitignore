@@ -8,3 +8,4 @@ weights/demographic_bert_weights.pth
 weights/*
 CNN_Dataset/
 data_tensors.pt
+.env

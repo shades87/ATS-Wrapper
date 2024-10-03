@@ -3,6 +3,8 @@ from GPTSummarise import *
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from BERTSummarise import *
+from BARTSummarize import *
+
 
 app = FastAPI()
 
@@ -24,6 +26,9 @@ app.add_middleware(
 async def read_root():
     return {"Message": "Congrats! This is your first API!"}
 
+class urlClass(BaseModel):
+    url: str
+
 class summaryClass(BaseModel):
     url: str
     age: int
@@ -31,6 +36,14 @@ class summaryClass(BaseModel):
     income: int
     ed: int
     city: int
+
+class summaryForBART(BaseModel):
+    url: str
+    age: str
+    nat: str
+    income: str
+    ed: str
+    city: str
 
 #summarise with chat GPT 3.5
 @app.post("/summariseGPT")
@@ -75,4 +88,48 @@ async def summariseB(demographics: summaryClass):
     summary = bertSummarize(article, one_hot)
     print(summary)
     return {"message": summary}
-    
+
+@app.post("/summariseBART")
+async def summariseC(demographics: summaryForBART):
+    article = get_article_text(demographics.url)
+    user = ""
+    age = ""
+    income = ""
+    nat = ""
+    ed = ""
+    metro = ""
+
+    if demographics.age:
+        age = "age_" +  demographics.age
+        age.replace(" ", "_")
+        user = user + age + " "
+
+    if demographics.income:
+        income = "income_" + demographics.income
+        income.replace(" ", "_")
+        user = user + income + " "
+
+    if demographics.nat: 
+        nat = "nat_" + demographics.nat
+        nat.replace(" ", ",")
+        user = user + nat + " "
+
+    if demographics.ed:
+        ed = "ed_" + demographics.ed
+        ed.replace(" ", ",")
+        user = user + ed + " "
+
+    if demographics.city:
+        metro = "metro_" + demographics.city
+        metro.replace(" ", ",")
+        user = user + metro + " "
+
+    print(user)
+
+    summary = summariseBART(user, article)
+
+    return {"message": summary}
+
+@app.post("/summarizeGemini")
+async def getArticle(demographics: summaryClass):
+    pass

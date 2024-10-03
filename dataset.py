@@ -41,9 +41,9 @@ def data():
 
             for line in lines:
                 line = line.rstrip()
-                print(line)
+                #print(line)
                 split = line.split(":") 
-                print(split)
+                #print(split)
                 match split[0]:
                     case "url":
                         url = split[1]
@@ -261,7 +261,7 @@ def load_data():
     path = 'dataset/'
     i = 0
     for filename in glob.glob(os.path.join(path, '*.txt')):
-        with open(os.path.join(os.getcwd(), filename), 'r', encoding='utf-8') as f: # open in readonly mode
+        with open(os.path.join(os.getcwd(), filename), 'r', encoding='utf-8', errors='ignore') as f: # open in readonly mode
             # do your stuff
             article = ""
             summary = ""
@@ -438,7 +438,7 @@ def loadForBART():
     demos = []
 
     for filename in glob.glob(os.path.join(path, '*.txt')):
-        with open(os.path.join(os.getcwd(), filename), 'r',  encoding="utf-8") as f: # open in readonly mode
+        with open(os.path.join(os.getcwd(), filename), 'r',  encoding="utf-8", errors='ignore') as f: # open in readonly mode
             # do your stuff
             lines = f.readlines()
             url = ""
@@ -500,5 +500,189 @@ def loadForBART():
                 summaries.append(summary)
                 demos.append(articleDemo)
 
+def loadForBARTTwo():
+    path = 'dataset/'
+    
+    articles = []
+    summaries = []
+    demos = []
+
+    for filename in glob.glob(os.path.join(path, '*.txt')):
+        with open(os.path.join(os.getcwd(), filename), 'r',  encoding="utf-8", errors='ignore') as f: # open in readonly mode
+            # do your stuff
+            lines = f.readlines()
+            url = ""
+            article = ""
+            summary = ""
+            age = ""
+            ed = ""
+            nat = ""
+            metro = ""
+            income = ""
+            articleDemo = "Summarise the article for the user: "
+
+            for line in lines:
+                line = line.rstrip()
+                print(line)
+                split = line.split(":") 
+                print(split)
+                match split[0]:
+                    case "url":
+                        url = split[1]
+
+                    case "article":
+                        article = split[1]
+
+                    case "summary":
+                        summary = split[1]
+                    
+                    case "age":
+                        age = split[1]
+                        if age:
+                            articleDemo += "User's age: " + age + ". "
+                            print(articleDemo)
+
+                    case "ed":
+                        ed = split[1]
+                        if ed:
+                            articleDemo += "User's education level: " + ed + ". "
+                            print(ed)
+
+                    case "nat":
+                        nat = split[1]
+                        if nat:
+                            articleDemo += "Users nationality: " + nat + ". "
+
+                    case "metro":
+                        metro = split[1]
+                        if metro:
+                            articleDemo += "User's locale: " + metro + ". "
+                    
+                    case "income":
+                        income = split[1]
+                        if income:
+                            articleDemo += "User's income: " + income + ". "
+                
+                f.close()
+            
+            if((article) and (summary)):
+                articles.append(article)
+                summaries.append(summary)
+                demos.append(articleDemo)
+
     return {"articles": articles, "summaries": summaries, "demographics": demos}
 
+def loadForBartEmbedding():
+    path = 'dataset/'
+    
+    articles = []
+    summaries = []
+    demos = []
+
+    edDemo = ["", "High School", "Bachelor's Degree", "PHD"]
+    ageDemo = ["", "Under 15", "15-35", "35-65", "65+"]
+    natDemo = ["", "Australia", "New Zealand", "England", "United States"]
+    metroDemo = ["", "Metro", "Regional"]
+    incomeDemo = ["", "Under $30K", "$30K-$100K", "$100K+"]
+
+
+    ageMap = {
+        "missing": 0,
+        "Under 15": 1,
+        "15-35": 2, 
+        "35-65": 3,
+        "65+": 4
+    }
+
+    edMap = {
+        "missing": 0,
+        "High School": 1, 
+        "Bachelor's Degree": 2, 
+        "PHD": 3
+    }
+
+    natMap = {
+        "missing": 0,
+        "Australia": 1,
+        "New Zealand": 2,
+        "England": 3,
+        "United States": 4
+    }
+
+    metroMap = {
+        "missing": 0,
+        "Metro": 1,
+        "Regional": 2
+    }
+
+    incomeMap = {
+        "missing":0,
+        "Under $30K" : 1,
+        "$30K-$100K": 2,
+        "$100K+": 3
+    }
+
+    for filename in glob.glob(os.path.join(path, '*.txt')):
+        with open(os.path.join(os.getcwd(), filename), 'r',  encoding="utf-8", errors='ignore') as f: # open in readonly mode
+            # do your stuff
+            lines = f.readlines()
+            url = ""
+            article = ""
+            summary = ""
+            ageDemo = 0
+            edDemo = 0
+            natDemo = 0
+            metroDemo = 0
+            incomeDemo = 0
+            indices = {}
+
+            for line in lines:
+                line = line.rstrip()
+                #print(line)
+                split = line.split(":") 
+                #print(split)
+                match split[0]:
+                    case "url":
+                        url = split[1]
+
+                    case "article":
+                        article = split[1]
+
+                    case "summary":
+                        summary = split[1]
+                    
+                    case "age":
+                        age = split[1]
+                        ageDemo = ageMap[age] if age else ageMap["missing"]
+                            
+
+                    case "ed":
+                        ed = split[1]
+                        edDemo = edMap[ed] if ed else edMap["missing"]
+
+                    case "nat":
+                        nat = split[1]
+                        natDemo = natMap[nat] if nat else natMap["missing"]
+
+                    case "metro":
+                        metro = split[1]
+                        metroDemo = metroMap[metro] if metro else metroMap["missing"]
+                    
+                    case "income":
+                        income = split[1]
+                        incomeDemo = incomeMap[income] if income else incomeMap["missing"]
+                
+                f.close()
+            
+            if((article) and (summary)):
+                indices = {"age_index": ageDemo,
+                           "income_index": incomeDemo,
+                           "nationality_index": natDemo,
+                           "locale_index": metroDemo,
+                           "ed_index": edDemo}
+                print(indices)
+                articles.append(article)
+                summaries.append(summary)
+                demos.append(indices)
+
+    return {"articles": articles, "summaries": summaries, "demographics": demos}

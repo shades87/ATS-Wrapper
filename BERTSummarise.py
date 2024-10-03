@@ -1,13 +1,33 @@
 import torch;
-from oneHotEncodeTrainingBERT import *
+import torch.nn as nn
+from transformers import BertModel
+
 from transformers import BertTokenizer
 
-model_path = 'weights/demographic_bert_weights_two.pth'
+
+tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+
+class DemographicBERT(nn.Module):
+    def __init__(self, demographic_size):
+        super(DemographicBERT, self).__init__()
+        self.bert = BertModel.from_pretrained('bert-base-uncased')
+        self.demographic_embedding = nn.Linear(demographic_size, 768)
+        self.decoder = nn.Linear(768, tokenizer.vocab_size)
+        self.softmax = nn.LogSoftmax(dim=-1)
+    
+    def forward(self, input_ids, demographics):
+        outputs = self.bert(input_ids)
+        last_hidden_state = outputs.last_hidden_state
+        demographic_embed = self.demographic_embedding(demographics)
+        combined = last_hidden_state + demographic_embed.unsqueeze(1)
+        decoded = self.decoder(combined)
+        return self.softmax(decoded)
+
+model_path = 'weights/CNN4.pt'
 model = DemographicBERT(demographic_size=16)  # or the correct demographic size
 model.load_state_dict(torch.load(model_path))
 model.eval()  # Set the model to evaluation mode
 model.to('cuda')
-tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
 def bertSummarize(article, demographic_info, max_length=128):
     
