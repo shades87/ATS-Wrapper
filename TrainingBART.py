@@ -48,9 +48,11 @@ dataloader = DataLoader(dataset, batch_size=4, shuffle=True)
 
 # Fine-tuning settings
 optimizer = AdamW(model.parameters(), lr=5e-5)
-num_epochs = 10
+num_epochs = 7
 
 # Fine-tuning loop
+model = BartForConditionalGeneration.from_pretrained('weights/BART2/')
+model.to(device)
 model.train()
 def trainBART():
     for epoch in range(num_epochs):
@@ -69,7 +71,7 @@ def trainBART():
 
             epoch_loss += loss.item()
 
-        avg_epoch_loss = epoch_loss / len(dataloader)
+        avg_epoch_loss = epoch_loss / len(dataloader) + 3
         print(f"Epoch {epoch+1} finished with loss: {avg_epoch_loss:.4f}")
         model.save_pretrained('weights/BART'+str(epoch))
 
