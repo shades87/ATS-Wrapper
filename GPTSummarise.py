@@ -1,6 +1,6 @@
-import sys
+import os
 #While creating my BERT model this is a call to chat GPT 3.5 to have functionality to the web-ui
-from openai import OpenAI #Chat GPT 3.5
+import openai #Chat GPT 3.5
 #newspaper has a dependency lxml[html_clean] pip install lxml
 from newspaper import Article #Get text from a News Article URL 
 from newspaper import Config
@@ -8,6 +8,7 @@ from newspaper import Config
 import re #Regular Expression
 from hashFunctions import *
 import json
+from dotenv import load_dotenv
 #List of functions
 #demographics() take a list of demographics represented by integers and turn it into instructions for a LLM
 #Returns a string
@@ -113,8 +114,10 @@ def get_article_text(url):
 #create a function to call chatgpt 3.5 using the demographics
 #This assumes that you have an OpenAI account, have credit in your account, and have saved your project key to the .env
 def summarise(demo, cont):
-  client = OpenAI()
-  completion = client.chat.completions.create(
+  load_dotenv()
+  OPENAI_API_KEY = os.getenv("OPEN_API_KEY")
+  openai.api_key = OPENAI_API_KEY
+  completion = openai.chat.completions.create(
     model="gpt-3.5-turbo",
     messages=[
       {"role": "system", "content": demo},

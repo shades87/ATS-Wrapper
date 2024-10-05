@@ -2,14 +2,15 @@ import torch
 from torch.utils.data import DataLoader, Dataset
 from transformers import BartTokenizer, BartForConditionalGeneration, AdamW
 from tqdm import tqdm
+from GPTSummarise import demographics
 
-def summariseBART(demographics, article):
+def summariseBART(demoArr, article):
 
-
+    demos = demographics(demoArr[0], demoArr[1],demoArr[2],demoArr[3], demoArr[4])
     device = "cuda"
     model = BartForConditionalGeneration.from_pretrained('weights/BARTTwo/')
     tokenizer = BartTokenizer.from_pretrained('facebook/bart-large')
-    combined_input = demographics + " " + article
+    combined_input = demos + " " + article
     print(combined_input)
     inputs = tokenizer(combined_input, max_length = 1024, return_tensors="pt", truncation=True).to(device)
 

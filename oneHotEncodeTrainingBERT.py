@@ -125,7 +125,7 @@ input_ids, attention_mask, demographics, summary_ids = torch.load(abPath)
 
 
 def train():
-    for epoch in range(15):
+    for epoch in range(10):
         model.train()
         total_loss = 0
         for batch in dataloader:

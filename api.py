@@ -4,6 +4,8 @@ from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from BERTSummarise import *
 from BARTSummarize import *
+import google.generativeai as genai
+from dotenv import load_dotenv
 
 
 app = FastAPI()
@@ -126,10 +128,25 @@ async def summariseC(demographics: summaryForBART):
 
     print(user)
 
+    demos = [demographics.age, demographics.city, demographics.ed, demographics.income, demographics.nat]
+
+
     summary = summariseBART(user, article)
 
     return {"message": summary}
 
 @app.post("/summarizeGemini")
-async def getArticle(demographics: summaryClass):
-    pass
+async def summariseD(demographic: summaryClass):
+    load_dotenv()
+    article = get_article_text(demographic.url)
+    demoArr = [demographic.age, demographic.city, demographic.ed, demographic.income, demographic.nat]
+    demos = demographics(demoArr[0], demoArr[1],demoArr[2],demoArr[3], demoArr[4])
+
+    print(os.getenv('GOOGLE_API_KEY'))
+    GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
+
+    genai.configure(api_key=GOOGLE_API_KEY)
+
+    model = genai.GenerativeModel("gemini-1.5-flash")
+    response = model.generate_content(demos+article)
+    return { "message": response.text}

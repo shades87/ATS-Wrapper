@@ -19,7 +19,8 @@ from CNNDataset import process_data
 
 
 #CNN/Dataset
-data = process_data()
+df = pd.read_csv('CNN_Dataset/train.csv')
+data = process_data(df)
 
 #fine tune dataset
 #data = load_data()
@@ -42,8 +43,10 @@ one_hot_encoded_demographics = pd.get_dummies(df[demographic_fields], drop_first
 #print(data[500])
 #print(one_hot_encoded_demographics.iloc[500])
 # Combine the original dataframe with the one-hot encoded demographic data
-df = pd.concat([df, one_hot_encoded_demographics], axis=1)
-df = df.drop(columns=demographic_fields)
+
+#for fine tuning only
+#df = pd.concat([df, one_hot_encoded_demographics], axis=1)
+#df = df.drop(columns=demographic_fields)
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
@@ -70,7 +73,7 @@ class NewsDataset(Dataset):
         summary_tokens = torch.tensor(row['summary_tokens'], dtype=torch.long)
         
         #Limit article to 512 tokens which is BERT's max, if needed
-        #article_tokens = self.tokenizer.encode(row['article'], truncation=True, padding='max_length', max_length=512)
+        article_tokens = self.tokenizer.encode(row['article'], truncation=True, padding='max_length', max_length=512)
 
         #debug print the values in the rows
         #for i, value in enumerate(row.values):
@@ -127,7 +130,7 @@ input_ids, attention_mask, demographics, summary_ids = torch.load(abPath)
 
 
 def train():
-    for epoch in range(15):
+    for epoch in range(10):
         model.train()
         total_loss = 0
         for batch in dataloader:
@@ -173,6 +176,7 @@ def train():
         print(f"Epoch {epoch + 1}, Loss: {total_loss / len(dataloader)}")
         torch.save(model.state_dict(), 'weights/BERT2BERT' + str(epoch) + ".pt")
 torch.save(model.state_dict(), 'weights/BERT2BERT')
+    
 
 start_time = time.time()
 train()
@@ -181,21 +185,24 @@ end_time = time.time()
 total_time = end_time - start_time
 print(f"Total training time: {total_time:.2f} seconds")
 
+fineData = load_data()
+finedf = pd.DataFrame(fineData)
+
 def fineTune():
     for epoch in range(15):
         model.train()
         total_loss = 0
         for batch in dataloader:
             #for fine tuning
-            #input_ids = batch['input_ids'].to("cuda")
-            #summary_ids = batch['summary_ids'].to("cuda")
-            #demographics = batch['demographics'].to("cuda")
+            input_ids = batch['input_ids'].to("cuda")
+            summary_ids = batch['summary_ids'].to("cuda")
+            demographics = batch['demographics'].to("cuda")
             
             #for initial train on CNN Dataset
-            input_ids = batch[0].to("cuda")
+            #input_ids = batch[0].to("cuda")
             #attention_mask = batch[1].to("cuda")
-            demographics = batch[2].to("cuda")
-            summary_ids = batch[3].to("cuda")
+            #demographics = batch[2].to("cuda")
+            #summary_ids = batch[3].to("cuda")
 
             optimizer.zero_grad()
             outputs = model(input_ids, demographics)
