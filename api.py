@@ -92,7 +92,7 @@ async def summariseB(demographics: summaryClass):
     return {"message": summary}
 
 @app.post("/summariseBART")
-async def summariseC(demographics: summaryForBART):
+async def summariseC(demographics: summaryClass):
     article = get_article_text(demographics.url)
     user = ""
     age = ""
@@ -101,37 +101,38 @@ async def summariseC(demographics: summaryForBART):
     ed = ""
     metro = ""
 
-    if demographics.age:
-        age = "age_" +  demographics.age
-        age.replace(" ", "_")
-        user = user + age + " "
+    #
+    #if demographics.age:
+        #age = "age_" +  demographics.age
+        #age.replace(" ", "_")
+        #user = user + age + " "
 
-    if demographics.income:
-        income = "income_" + demographics.income
-        income.replace(" ", "_")
-        user = user + income + " "
+    #if demographics.income:
+        #income = "income_" + demographics.income
+        #income.replace(" ", "_")
+        #user = user + income + " "
 
-    if demographics.nat: 
-        nat = "nat_" + demographics.nat
-        nat.replace(" ", ",")
-        user = user + nat + " "
+    #if demographics.nat: 
+        #nat = "nat_" + demographics.nat
+        #nat.replace(" ", ",")
+        #user = user + nat + " "
 
-    if demographics.ed:
-        ed = "ed_" + demographics.ed
-        ed.replace(" ", ",")
-        user = user + ed + " "
+    #if demographics.ed:
+        #ed = "ed_" + demographics.ed
+        #ed.replace(" ", ",")
+        #user = user + ed + " "
 
-    if demographics.city:
-        metro = "metro_" + demographics.city
-        metro.replace(" ", ",")
-        user = user + metro + " "
+    #if demographics.city:
+        #metro = "metro_" + demographics.city
+        #metro.replace(" ", ",")
+        #user = user + metro + " "
 
-    print(user)
+    #print(user)
 
     demos = [demographics.age, demographics.city, demographics.ed, demographics.income, demographics.nat]
 
 
-    summary = summariseBART(user, article)
+    summary = summariseBART(demos, article)
 
     return {"message": summary}
 
@@ -142,10 +143,9 @@ async def summariseD(demographic: summaryClass):
     demoArr = [demographic.age, demographic.city, demographic.ed, demographic.income, demographic.nat]
     demos = demographics(demoArr[0], demoArr[1],demoArr[2],demoArr[3], demoArr[4])
 
-    print(os.getenv('GOOGLE_API_KEY'))
-    GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
-
-    genai.configure(api_key=GOOGLE_API_KEY)
+    THE_GOOGLE_API_KEY = os.getenv('GEMINI_KEY')
+    print(repr(THE_GOOGLE_API_KEY))
+    genai.configure(api_key=THE_GOOGLE_API_KEY)
 
     model = genai.GenerativeModel("gemini-1.5-flash")
     response = model.generate_content(demos+article)
