@@ -19,7 +19,10 @@ class SummarizationDataset(Dataset):
     def __getitem__(self, idx):
         combined_input = self.demographics[idx] + " " + self.articles[idx]
         inputs = self.tokenizer(combined_input, max_length=self.max_length, padding="max_length", truncation=True, return_tensors="pt")
-        targets = self.tokenizer(self.summaries[idx], max_length=150, padding="max_length", truncation=True, return_tensors="pt")
+        
+        #train on the full summary with padding for shorter ones
+        targets = self.tokenizer(self.summaries[idx], max_length=256, padding="max_length", truncation=True, return_tensors="pt")
+
 
         return {
             "input_ids": inputs.input_ids.squeeze(),
@@ -44,14 +47,14 @@ demographics = data.get("demographics")
 
 # Prepare dataset and dataloader
 dataset = SummarizationDataset(articles, summaries, demographics, tokenizer)
-dataloader = DataLoader(dataset, batch_size=4, shuffle=True)
+dataloader = DataLoader(dataset, batch_size=2, shuffle=True)
 
 # Fine-tuning settings
 optimizer = AdamW(model.parameters(), lr=5e-5)
-num_epochs = 7
+num_epochs = 3
 
 # Fine-tuning loop
-model = BartForConditionalGeneration.from_pretrained('weights/BART2/')
+model = BartForConditionalGeneration.from_pretrained('weights\BARTLarge0')
 model.to(device)
 model.train()
 def trainBART():
@@ -73,7 +76,9 @@ def trainBART():
 
         avg_epoch_loss = epoch_loss / len(dataloader) + 3
         print(f"Epoch {epoch+1} finished with loss: {avg_epoch_loss:.4f}")
-        model.save_pretrained('weights/BART'+str(epoch))
+        save_number = epoch + 1
+        model_path = "weights/BARTLarge"+str(save_number)
+        model.save_pretrained(model_path)
 
 # Save fine-tuned model
 trainBART()
@@ -83,29 +88,13 @@ trainBART()
 # Example usage after fine-tuning
 model.eval()
 
-# Example article and demographics for summarization
-#test_article = "The government is investing in solar and wind energy projects."
-#test_demographics = "age_30-40 income_100000+"
-
-# Combine and tokenize
-#combined_input = test_demographics + " " + test_article
-#inputs = tokenizer(combined_input, max_length=1024, return_tensors="pt", truncation=True).to(device)
-
-# Generate summary
-#with torch.no_grad():
-   #summary_ids = model.generate(inputs["input_ids"], attention_mask=inputs["attention_mask"], max_length=150, num_beams=4, early_stopping=True)
-
-# Decode and print summary
-#summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
-#print("Generated Summary:", summary)
-
 def summarizeBART(article, demographics):
-    model = BartForConditionalGeneration.from_pretrained('weights/BARTTwo/')
+    model = BartForConditionalGeneration.from_pretrained('weights/BARTLarge2/')
     combined_input = demographics + " " + article
     inputs = tokenizer(combined_input, max_length = 1024, return_tensors="pt", truncation=True).to(device)
     
     with torch.no_grad():
-        summary_ids = model.generate(inputs["input_ids"], attention_mask=inputs["attention_mask"], max_length=150, num_beams=4, early_stopping=True)
+        summary_ids = model.generate(inputs["input_ids"], attention_mask=inputs["attention_mask"], max_length=256, num_beams=4, early_stopping=True)
     
     summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
     return summary

@@ -4,6 +4,9 @@ from transformers import EncoderDecoderModel
 
 from transformers import BertTokenizer
 
+#Not working yet
+#Future work
+#Will train with more than one pre existing dataset
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 

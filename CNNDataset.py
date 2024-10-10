@@ -7,6 +7,8 @@ tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
 df = pd.read_csv('CNN_Dataset/train.csv')
 
+
+#This takes longer than expected, I should have a closer look later for optimization
 def process_data(df, max_length=512):
     input_ids = []
     attention_masks = []

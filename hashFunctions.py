@@ -1,6 +1,9 @@
 from pathlib import Path
 import hashlib
 
+
+#Hashing the summaries from GPT to save credit, makes sure that the same article with the same demographics
+#is only ever sent to ChatGPT once
 def hashFunction(LLM, url, age, ed, nat, income, city):
     m = hashlib.sha256()
     m.update(str((LLM+url+str(age)+str(ed)+str(nat)+str(income)+str(city))).encode())

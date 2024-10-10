@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 #Returns a string
 
 #checkArticle() Check that a URL is from a list of news websites judged to be trusted
-#Returns boolean\
+#Returns boolean
 
 #create a function to change demographics into a string
 #default for arguments is 0
@@ -84,6 +84,7 @@ def demographics(age=0, ed=0, income=0, region=0, country=0):
   return demo   
 
 #Check that an article is from a recognized news source
+#Not used in final model
 def check_article(url):
   ok_list = ["abc.net.au/news/"]
   checking = True #boolean to
@@ -91,7 +92,7 @@ def check_article(url):
   return bool(url_regex.match(url))
 
 
-#create a function that can grab text from a website
+#From Newspaper 3K how to/examples
 def get_article_text(url):
   text = ""
   user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'
@@ -111,7 +112,7 @@ def get_article_text(url):
   return article.text.replace("\n", "")
 
 
-#create a function to call chatgpt 3.5 using the demographics
+
 #This assumes that you have an OpenAI account, have credit in your account, and have saved your project key to the .env
 def summarise(demo, cont):
   load_dotenv()
@@ -128,7 +129,7 @@ def summarise(demo, cont):
   a = completion.choices[0].message.content
   return a
 
-#I think I should rearrange the functions
+#I don't remember why I called this flow
 def flow(demoArr, article):
   response = ""
   hash = hashFunction("ChatGPT", article, demoArr[0], demoArr[1],demoArr[2],demoArr[3], demoArr[4])

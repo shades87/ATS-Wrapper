@@ -24,18 +24,16 @@ class DemographicBERT(nn.Module):
         return self.softmax(decoded)
 
 model_path = 'weights/CNN4.pt'
-model = DemographicBERT(demographic_size=16)  # or the correct demographic size
+model = DemographicBERT(demographic_size=16) 
 model.load_state_dict(torch.load(model_path))
-model.eval()  # Set the model to evaluation mode
+model.eval()  # Set the model to evaluation mode (I don't actually know what the default state is)
 model.to('cuda')
 
 def bertSummarize(article, demographic_info, max_length=128):
     
     print("Article inside bertSummaraize: " + article)
     
-    # Tokenize the article
-    
-
+    # Tokenize the article, max length is 512 tokens which is BERT's max
     input_ids = tokenizer.encode(article, return_tensors='pt', truncation=True, padding='max_length', max_length=512)
     
     # Prepare demographic tensor
@@ -45,7 +43,7 @@ def bertSummarize(article, demographic_info, max_length=128):
     input_ids = input_ids.to("cuda")
     demographic_tensor = demographic_tensor.to("cuda")
     
-    # Generate output
+    # Generate summary
     with torch.no_grad():
         outputs = model(input_ids, demographic_tensor)
     

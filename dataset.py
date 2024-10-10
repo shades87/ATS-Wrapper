@@ -28,7 +28,7 @@ def data():
     path = 'dataset/'
     for filename in glob.glob(os.path.join(path, '*.txt')):
         with open(os.path.join(os.getcwd(), filename), 'r') as f: # open in readonly mode
-            # do your stuff
+            # URL isn't used but I think it's important to record
             lines = f.readlines()
             url = ""
             article = ""
@@ -262,7 +262,6 @@ def load_data():
     i = 0
     for filename in glob.glob(os.path.join(path, '*.txt')):
         with open(os.path.join(os.getcwd(), filename), 'r', encoding='utf-8', errors='ignore') as f: # open in readonly mode
-            # do your stuff
             article = ""
             summary = ""
             age = ""
@@ -509,7 +508,6 @@ def loadForBARTTwo():
 
     for filename in glob.glob(os.path.join(path, '*.txt')):
         with open(os.path.join(os.getcwd(), filename), 'r',  encoding="utf-8", errors='ignore') as f: # open in readonly mode
-            # do your stuff
             lines = f.readlines()
             url = ""
             article = ""
@@ -624,7 +622,6 @@ def loadForBartEmbedding():
 
     for filename in glob.glob(os.path.join(path, '*.txt')):
         with open(os.path.join(os.getcwd(), filename), 'r',  encoding="utf-8", errors='ignore') as f: # open in readonly mode
-            # do your stuff
             lines = f.readlines()
             url = ""
             article = ""

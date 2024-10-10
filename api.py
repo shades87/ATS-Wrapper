@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 
 app = FastAPI()
 
-
+#We're hosting a svelte app on a different address so Cross Origin api access is needed
 origins = ["http://localhost",
     "http://localhost:8080",
     "http://localhost:5173",
@@ -23,11 +23,15 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+#my first time using fastapi so let's save the command
 #python -m uvicorn api:app --reload
 @app.get("/")
 async def read_root():
     return {"Message": "Congrats! This is your first API!"}
 
+#classes to simplify passing Json in body to api
+# I wish I did Extended Distributed Computing before I started my dissertation 
 class urlClass(BaseModel):
     url: str
 
@@ -48,6 +52,7 @@ class summaryForBART(BaseModel):
     city: str
 
 #summarise with chat GPT 3.5
+#If you don't have a API key saved in your environment the whole thing won't work
 @app.post("/summariseGPT")
 async def summariseA(demographics: summaryClass):
     summary = "the summary"
@@ -58,6 +63,7 @@ async def summariseA(demographics: summaryClass):
     return {"message": summary}
 
 #summarise with custom model built on top of BERT
+#I left this in on purpose even though it doesn't work
 @app.post("/summariseBERT")
 async def summariseB(demographics: summaryClass):
     #order of age, ed, nat, income, city
@@ -82,15 +88,20 @@ async def summariseB(demographics: summaryClass):
     print("URL: " + demographics.url)
     article = get_article_text(demographics.url)
     #debug check article
-    print("Article: " + article)
+    #print("Article: " + article)
     #debug, check one_hot list
-    print(one_hot)
+    #print(one_hot)
 
 
     summary = bertSummarize(article, one_hot)
-    print(summary)
+    #print(summary)
+    #Does fastapi return a code or should I return OK? I need to check this
     return {"message": summary}
 
+#Summarise for BART
+#BART is the slowest summarizer, I should consider loading the model once when the api is first loaded and passing the model in
+#to save time
+#The first time BART is called it normally times out, some change is needed
 @app.post("/summariseBART")
 async def summariseC(demographics: summaryClass):
     article = get_article_text(demographics.url)
@@ -101,7 +112,8 @@ async def summariseC(demographics: summaryClass):
     ed = ""
     metro = ""
 
-    #
+    #Tried more than one way to input demographics
+
     #if demographics.age:
         #age = "age_" +  demographics.age
         #age.replace(" ", "_")
@@ -136,6 +148,9 @@ async def summariseC(demographics: summaryClass):
 
     return {"message": summary}
 
+
+#Gemini AI
+#If you don't have a Google AI Key the whole page won't work, comment it out if this is the case
 @app.post("/summarizeGemini")
 async def summariseD(demographic: summaryClass):
     load_dotenv()
