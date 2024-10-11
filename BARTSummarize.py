@@ -9,7 +9,7 @@ def summariseBART(demoArr, article):
 
     demos = demographics(demoArr[0], demoArr[1],demoArr[2],demoArr[3], demoArr[4])
     device = "cuda"
-    model = BartForConditionalGeneration.from_pretrained('weights/BART3/')
+    model = BartForConditionalGeneration.from_pretrained('weights/BARTLarge1/')
     tokenizer = BartTokenizer.from_pretrained('facebook/bart-large')
     combined_input = demos + " " + article
     print(combined_input)
