@@ -91,6 +91,8 @@ def check_article(url):
   url_regex = re.compile(r'https?://(?:www\.)?abc.net.au/news/[a-zA-Z0-9./]+')
   return bool(url_regex.match(url))
 
+class NewspaperError(Exception):
+    pass
 
 #From Newspaper 3K how to/examples
 def get_article_text(url):
@@ -107,6 +109,7 @@ def get_article_text(url):
     print(article.text)
   except:
     print("Download failed")
+    raise NewspaperError("Download of article failed: Check URL")
 
 
   return article.text.replace("\n", "")
@@ -141,11 +144,14 @@ def flow(demoArr, article):
     f.close()
 
   else:
-    articleText = get_article_text(article)
-    print("Article: " + articleText)
-    demos = demographics(demoArr[0], demoArr[1],demoArr[2],demoArr[3], demoArr[4])
-    response = summarise(demos,article)
-    response = response
-    writeSummary(hash, response)
-  
-  return response
+    try:
+      articleText = get_article_text(article)
+      print("Article: " + articleText)
+      demos = demographics(demoArr[0], demoArr[1],demoArr[2],demoArr[3], demoArr[4])
+      response = summarise(demos,article)
+      response = response
+      writeSummary(hash, response)
+      return response
+    
+    except NewspaperError:
+      return ("Article failed to Download: Check your URL")
