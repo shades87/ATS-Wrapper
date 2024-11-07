@@ -142,6 +142,7 @@ def flow(demoArr, article):
     text = f.read()
     response = text
     f.close()
+    return response
 
   else:
     try:

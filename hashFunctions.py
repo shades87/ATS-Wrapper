@@ -21,6 +21,7 @@ def checkFileExists(hashVal):
         return False
     
 def writeSummary(hash, summary):
+    print("writing: " +summary)
     f = open("summaries/"+hash +".txt", "w")
     f.write(str(summary))
     f.close()
