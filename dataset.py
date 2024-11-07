@@ -1,10 +1,6 @@
 import pandas as pd
 import os, glob
 import time
-from sklearn.model_selection import train_test_split
-
-from newspaper import Article 
-from newspaper import Config
 
 from GPTSummarise import *
 from hashFunctions import *

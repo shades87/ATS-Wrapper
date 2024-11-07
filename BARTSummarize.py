@@ -1,7 +1,6 @@
 import torch
 from torch.utils.data import DataLoader, Dataset
 from transformers import BartTokenizer, BartForConditionalGeneration, AdamW
-from tqdm import tqdm
 from GPTSummarise import demographics
 
 #Basically a model to load just for the API

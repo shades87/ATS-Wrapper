@@ -1,0 +1,12 @@
+pip install fastapi[standard]
+pip install pydantic
+pip install -U google-generativeai
+pip install python-dotenv
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install transformers
+pip install pandas
+pip install openai
+pip install -U scikit-learn
+pip install newspaper3k 
+pip install numpy
+pip install tqdm
