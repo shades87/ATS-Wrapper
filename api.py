@@ -11,14 +11,11 @@ from dotenv import load_dotenv
 app = FastAPI()
 
 #We're hosting a svelte app on a different address so Cross Origin api access is needed
-origins = ["http://localhost",
-    "http://localhost:8080",
-    "http://localhost:5173",
-    "*"]
+allow_origins = ["http://localhost:5173"]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=allow_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
