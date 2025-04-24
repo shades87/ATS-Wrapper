@@ -9,3 +9,4 @@ weights/*
 CNN_Dataset/
 data_tensors.pt
 .env
+huggingface.py

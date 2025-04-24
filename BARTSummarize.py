@@ -6,9 +6,10 @@ from GPTSummarise import demographics
 #Basically a model to load just for the API
 def summariseBART(demoArr, article):
 
+    repo_name = "shadyshadyshades/ATS-Wrapper"
     demos = demographics(demoArr[0], demoArr[1],demoArr[2],demoArr[3], demoArr[4])
-    device = "cuda"
-    model = BartForConditionalGeneration.from_pretrained('weights/BARTLarge1/')
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model = BartForConditionalGeneration.from_pretrained(repo_name)
     tokenizer = BartTokenizer.from_pretrained('facebook/bart-large')
     combined_input = demos + " " + article
     print(combined_input)
