@@ -1,15 +1,15 @@
-This web ui was created on windows in VS Code
+Begin by installing the modules in requirements.txt
 
-This frontend requires Svelte, Node JS and Skeleton UI
-Node: https://nodejs.org/en/download/package-manager
-Svelte and Skeleton should be installed by runnning the command npm i
+This backend is designed to be access by a frontend here: https://github.com/shades87/ATS
 
-This frontend wrapper is designed to connect to the backend here: https://github.com/shades87/ATS
-The backend has it's own requirements and should be started before the frontend is started.
+This backend requires environment variables for gemini and chat GPT, for marking purposes I'm happy to provide them, please send an email from your @curtin email to daniel.m.mcfadyen@gmail.com
 
-Start this frontend with the command npm run dev
+This backend is run with the command: python -m uvicorn api:app --reload
 
-Once started you should be able to open it in any web browser in the address http://localhost:5173/
+Environment Varables should go in a .env file or saved directly to your environment 
+(Windows) setx OPEN_API_KEY key
+(Windows) setx GEMINI_KEY key
 
-The backend requires environment variables for Gemini and Chat GPT
-For marking purposes I'm happy to provide those variables, please send an email from your @curtin email to daniel.m.mcfadyen@gmail.com
+Weights for the ATS model are saved here https://drive.google.com/drive/folders/1Qc92tn9ON8Jr6hCuBaLVB7UOWfUCaFKA?usp=drive_link
+create a folder called weights and save them inside the folder
+ATS-Wrapper/weights/{Save Weights Here}
