@@ -2,9 +2,9 @@ fastapi[standard]
 pydantic
 google-generativeai
 python-dotenv
-torch==2.2.2+cu118
-torchvision==0.15.0+cu118
-torchaudio==2.1.0+cu118
+torch
+torchvision
+torchaudio
 transformers
 pandas
 openai
