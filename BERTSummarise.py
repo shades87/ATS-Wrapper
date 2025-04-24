@@ -27,8 +27,8 @@ model_path = 'weights/CNN4.pt'
 model = DemographicBERT(demographic_size=16) 
 model.load_state_dict(torch.load(model_path))
 model.eval()  # Set the model to evaluation mode (I don't actually know what the default state is)
-model.to('cuda')
-
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model.to(device)
 def bertSummarize(article, demographic_info, max_length=128):
     
     print("Article inside bertSummaraize: " + article)

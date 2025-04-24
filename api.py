@@ -156,7 +156,8 @@ async def summariseC(demographics: summaryClass):
         summary = summariseBART(demos, article)
 
         return {"message": summary}
-    except:
+    except Exception as e:
+        print(f"Error occurred: {e}")  # ✅ This will print the actual error
         return {"message": "Error downloading article: Check the URL"}
 
 #Gemini AI
