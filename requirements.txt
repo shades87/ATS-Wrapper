@@ -1,6 +1,6 @@
 fastapi[standard]
 pydantic
--U google-generativeai
+google-generativeai
 python-dotenv
 torch==2.2.2+cu118
 torchvision==0.15.0+cu118
@@ -8,7 +8,7 @@ torchaudio==2.1.0+cu118
 transformers
 pandas
 openai
--U scikit-learn
+scikit-learn
 newspaper3k
 numpy
 tqdm
