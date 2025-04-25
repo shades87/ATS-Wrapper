@@ -1,7 +1,8 @@
+import os
+from dotenv import load_dotenv
 import torch;
 import torch.nn as nn
 from transformers import BertModel
-
 from transformers import BertTokenizer
 
 
@@ -23,12 +24,28 @@ class DemographicBERT(nn.Module):
         decoded = self.decoder(combined)
         return self.softmax(decoded)
 
-model_path = 'weights/CNN4.pt'
+
+
+#model_path = 'weight/CNN4.pt'
 model = DemographicBERT(demographic_size=16) 
-model.load_state_dict(torch.load(model_path))
+#model.load_state_dict(torch.load(model_path))
+load_dotenv()
+token = os.getenv('HF_Token')
+
+state_dic = torch.hub.load_state_dict_from_url(
+    "https://huggingface.co/shadyshadyshades/BERT-Demographics/upload/main/BERT_Demographics.bin",
+    map_location="cpu",
+    headers={"Authorization": f"Bearer {token}"}
+)
+
+model.load_state_dict(state_dic)
+
 model.eval()  # Set the model to evaluation mode (I don't actually know what the default state is)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
+
+#torch.save(model.state_dict, "BERT_Demographics.bin")
+
 def bertSummarize(article, demographic_info, max_length=128):
     
     print("Article inside bertSummaraize: " + article)
@@ -40,8 +57,8 @@ def bertSummarize(article, demographic_info, max_length=128):
     demographic_tensor = torch.tensor(demographic_info, dtype=torch.float).unsqueeze(0)
     
     # Move tensors to the appropriate device
-    input_ids = input_ids.to("cuda")
-    demographic_tensor = demographic_tensor.to("cuda")
+    input_ids = input_ids.to(device)
+    demographic_tensor = demographic_tensor.to(device)
     
     # Generate summary
     with torch.no_grad():
